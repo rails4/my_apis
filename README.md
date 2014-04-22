@@ -45,7 +45,7 @@ Akapity z książki „Wojna i pokój” mam zapisane w takim formacie:
 ```
 
 Do bazy zaimportujemy dane w wygodniejszym formacie.
-Pominiemy `_id` i użyjemy numeru akapitu (`p`) jako nowego `_id`:
+Pominiemy `_id` i użyjemy numeru akapitu `p` jako nowego `_id`:
 
 ```json
 {
