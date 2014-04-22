@@ -68,3 +68,13 @@ Na koniec uaktualniamy plik konfiguracyjny [mongoid.yml](config/mongoid.yml).
 
 Poniżej skorzystamy z danych zapisanych w kolekcji
 *books* w bazie *test*.
+
+Generujemy model *Book*:
+
+```sh
+rails g model Book c:string t:string
+  invoke  mongoid
+  create    app/models/book.rb
+  invoke    rspec
+  create      spec/models/book_spec.rb
+```
