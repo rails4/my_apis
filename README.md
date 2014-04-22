@@ -1,4 +1,4 @@
-## CORS Data Server build with RailsAPI and MongoDB
+## API – MongoDB + AMS
 
 Zaczynamy od wygenerowania rusztowania aplikacji:
 
