@@ -82,5 +82,11 @@ rails g model Book c:string t:string
 Generujemy kontroller *BooksController*:
 
 ```sh
+rails g controller Books show
+```
 
+i poprawiamy routing w pliku *config/routes.rb*:
+
+```ruby
+resources :books, only: [:show]
 ```
