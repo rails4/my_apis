@@ -78,3 +78,9 @@ rails g model Book c:string t:string
   invoke    rspec
   create      spec/models/book_spec.rb
 ```
+
+Generujemy kontroller *BooksController*:
+
+```sh
+
+```
