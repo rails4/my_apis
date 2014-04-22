@@ -85,8 +85,25 @@ Generujemy kontroller *BooksController*:
 rails g controller Books show
 ```
 
-i poprawiamy routing w pliku *config/routes.rb*:
+poprawiamy routing w pliku *config/routes.rb*:
 
 ```ruby
 resources :books, only: [:show]
 ```
+
+i implementujemy metodę *show*:
+
+```ruby
+class BooksController < ApplicationController
+  def show
+    @book = Book.find params[:id].to_i
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @book }
+    end
+  end
+end
+```
+
+### TODO: authentication

@@ -1,7 +1,7 @@
 class BooksController < ApplicationController
 
   def show
-    @book = Book.find(params[:id])
+    @book = Book.find params[:id].to_i
 
     respond_to do |format|
       format.html
