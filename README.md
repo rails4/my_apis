@@ -61,6 +61,8 @@ Konwersję wykonamy za pomocą programu [jq](http://stedolan.github.io/jq/):
 < war_and_peace.json jq -c '. | {_id: .p, c, t}' | \
   mongoimport -d my_apis_development -c books
 ```
+Na koniec uaktualniamy plik konfiguracyjny [mongoid.yml](config/mongoid.yml).
+
 
 ## Designing an API
 
