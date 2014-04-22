@@ -59,5 +59,10 @@ Konwersję wykonamy za pomocą programu [jq](http://stedolan.github.io/jq/):
 
 ```sh
 < war_and_peace.json jq -c '. | {_id: .p, c, t}' | \
-  mongoimport -d test -c books
+  mongoimport -d my_apis_development -c books
 ```
+
+## Designing an API
+
+Poniżej skorzystamy z danych zapisanych w kolekcji
+*books* w bazie *test*.

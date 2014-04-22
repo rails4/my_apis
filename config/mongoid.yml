@@ -1,10 +1,6 @@
 development:
-  # Configure available database sessions. (required)
   sessions:
-    # Defines the default session. (required)
     default:
-      # Defines the name of the default database that Mongoid can connect to.
-      # (required).
       database: my_apis_development
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
