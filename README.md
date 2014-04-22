@@ -1,4 +1,4 @@
-## API – MongoDB + AMS
+## API – Mongoid + AMS
 
 Zaczynamy od wygenerowania rusztowania aplikacji:
 
@@ -17,7 +17,7 @@ rails-api g rspec:init
 rails-api g mongoid:config
 ```
 
-### *Active Model Serializers* & *Mongoid*
+### Mongoid + Active Model Serializers
 
 Makes *mongoid* and *active_model_serializers* to play nicely together:
 
