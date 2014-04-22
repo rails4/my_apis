@@ -29,10 +29,10 @@ Mongoid::Document.send(:include, ActiveModel::SerializerSupport)
 Mongoid::Criteria.delegate(:active_model_serializer, :to => :to_a)
 ```
 
-### Import War and Peace paragraphs into MongoDB
+### Import paragraphs from „War and Peace” into MongoDB
 
-Akapity z książki „Wojna i pokój” są zapisane w pliku
-w takim formacie:
+Akapity z książki „Wojna i pokój” mam zapisane w takim formacie:
+
 ```js
 {
   "_id": {
