@@ -1,0 +1,364 @@
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5688" }, "day" : 1, "month" : 1, "names" : [ "Mieszka", "Mieczysława", "Marii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5689" }, "day" : 2, "month" : 1, "names" : [ "Izydora", "Bazylego", "Grzegorza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede568a" }, "day" : 3, "month" : 1, "names" : [ "Arlety", "Genowefy", "Danuty" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede568b" }, "day" : 4, "month" : 1, "names" : [ "Tytusa", "Anieli", "Eugeniusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede568c" }, "day" : 5, "month" : 1, "names" : [ "Hanny", "Szymona", "Edwarda" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede568d" }, "day" : 6, "month" : 1, "names" : [ "Kacpra", "Melchiora", "Baltazara" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede568e" }, "day" : 7, "month" : 1, "names" : [ "Juliana", "Lucjana", "Rajmunda" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede568f" }, "day" : 8, "month" : 1, "names" : [ "Seweryna", "Mścisława", "Juliusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5690" }, "day" : 9, "month" : 1, "names" : [ "Marceliny", "Marianny", "Juliana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5691" }, "day" : 10, "month" : 1, "names" : [ "Wilhelma", "Dobrosława", "Danuty" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5692" }, "day" : 11, "month" : 1, "names" : [ "Honoraty", "Teodozjusza", "Matyldy" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5693" }, "day" : 12, "month" : 1, "names" : [ "Grety", "Arkadiusza", "Rajmunda" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5694" }, "day" : 13, "month" : 1, "names" : [ "Bogumiły", "Weroniki", "Hilarego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5695" }, "day" : 14, "month" : 1, "names" : [ "Feliksa", "Domosława", "Niny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5696" }, "day" : 15, "month" : 1, "names" : [ "Pawła", "Arnolda", "Izydora" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5697" }, "day" : 16, "month" : 1, "names" : [ "Marcelego", "Włodzimierza", "Waldemara" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5698" }, "day" : 17, "month" : 1, "names" : [ "Antoniego", "Rościsława", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5699" }, "day" : 18, "month" : 1, "names" : [ "Piotra", "Małgorzaty" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede569a" }, "day" : 19, "month" : 1, "names" : [ "Henryka", "Mariusza", "Marty" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede569b" }, "day" : 20, "month" : 1, "names" : [ "Fabiana", "Sebastiana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede569c" }, "day" : 21, "month" : 1, "names" : [ "Agnieszki", "Jarosława" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede569d" }, "day" : 22, "month" : 1, "names" : [ "Anastazego", "Wincentego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede569e" }, "day" : 23, "month" : 1, "names" : [ "Ildefonsa", "Rajmunda" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede569f" }, "day" : 24, "month" : 1, "names" : [ "Felicji", "Franciszka", "Rafała" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56a0" }, "day" : 25, "month" : 1, "names" : [ "Pawła", "Miłosza", "Elwiry" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56a1" }, "day" : 26, "month" : 1, "names" : [ "Tymoteusza", "Michała", "Tytusa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56a2" }, "day" : 27, "month" : 1, "names" : [ "Przybysława", "Anieli", "Jerzego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56a3" }, "day" : 28, "month" : 1, "names" : [ "Walerego", "Radomira", "Tomasza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56a4" }, "day" : 29, "month" : 1, "names" : [ "Zdzisława", "Franciszka", "Józefa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56a5" }, "day" : 30, "month" : 1, "names" : [ "Macieja", "Martyny", "Teofila" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56a6" }, "day" : 31, "month" : 1, "names" : [ "Marceli", "Ludwiki", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56a7" }, "day" : 1, "month" : 2, "names" : [ "Brygidy", "Ignacego", "Seweryna" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56a8" }, "day" : 2, "month" : 2, "names" : [ "Marii", "Miłosława" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56a9" }, "day" : 3, "month" : 2, "names" : [ "Błażeja", "Oskara" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56aa" }, "day" : 4, "month" : 2, "names" : [ "Andrzeja", "Weroniki", "Joanny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56ab" }, "day" : 5, "month" : 2, "names" : [ "Agaty", "Adelajdy", "Izydora" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56ac" }, "day" : 6, "month" : 2, "names" : [ "Doroty", "Bogdana", "Pawła" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56ad" }, "day" : 7, "month" : 2, "names" : [ "Ryszarda", "Teodora", "Romana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56ae" }, "day" : 8, "month" : 2, "names" : [ "Hieronima", "Sebastiana", "Ireny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56af" }, "day" : 9, "month" : 2, "names" : [ "Apolonii", "Eryki", "Cyryla" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56b0" }, "day" : 10, "month" : 2, "names" : [ "Elwiry", "Jacka", "Scholastyki" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56b1" }, "day" : 11, "month" : 2, "names" : [ "Lucjana", "Olgierda", "Grzegorza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56b2" }, "day" : 12, "month" : 2, "names" : [ "Eulalii", "Radosława", "Modesta" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56b3" }, "day" : 13, "month" : 2, "names" : [ "Grzegorza", "Katarzyny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56b4" }, "day" : 14, "month" : 2, "names" : [ "Cyryla", "Metodego", "Walentego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56b5" }, "day" : 15, "month" : 2, "names" : [ "Jowity", "Faustyna", "Zygfryda" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56b6" }, "day" : 16, "month" : 2, "names" : [ "Danuty", "Julianny", "Daniela" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56b7" }, "day" : 17, "month" : 2, "names" : [ "Aleksego", "Zbigniewa", "Łukasza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56b8" }, "day" : 18, "month" : 2, "names" : [ "Szymona", "Konstancji", "Flawiana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56b9" }, "day" : 19, "month" : 2, "names" : [ "Arnolda", "Konrada", "Marcelego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56ba" }, "day" : 20, "month" : 2, "names" : [ "Leona", "Ludomira", "Zenobiusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56bb" }, "day" : 21, "month" : 2, "names" : [ "Eleonory", "Fortunata", "Roberta" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56bc" }, "day" : 22, "month" : 2, "names" : [ "Marty", "Małgorzaty", "Piotra" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56bd" }, "day" : 23, "month" : 2, "names" : [ "Romany", "Damiana", "Polikarpa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56be" }, "day" : 24, "month" : 2, "names" : [ "Macieja", "Bogusza", "Sergiusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56bf" }, "day" : 25, "month" : 2, "names" : [ "Wiktora", "Cezarego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56c0" }, "day" : 26, "month" : 2, "names" : [ "Mirosława", "Aleksandra" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56c1" }, "day" : 27, "month" : 2, "names" : [ "Gabriela", "Anastazji" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56c2" }, "day" : 28, "month" : 2, "names" : [ "Romana", "Ludomira", "Lecha" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56c3" }, "day" : 1, "month" : 3, "names" : [ "Antoniny", "Radosława", "Dawida" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56c4" }, "day" : 2, "month" : 3, "names" : [ "Heleny", "Halszki", "Pawła" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56c5" }, "day" : 3, "month" : 3, "names" : [ "Maryny", "Kunegundy", "Tycjana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56c6" }, "day" : 4, "month" : 3, "names" : [ "Łucji", "Kazimierza", "Eugeniusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56c7" }, "day" : 5, "month" : 3, "names" : [ "Adriana", "Fryderyka", "Teofila" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56c8" }, "day" : 6, "month" : 3, "names" : [ "Róży", "Jordana", "Agnieszki" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56c9" }, "day" : 7, "month" : 3, "names" : [ "Tomasza", "Perpetuy", "Felicyty" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56ca" }, "day" : 8, "month" : 3, "names" : [ "Beaty", "Wincentego", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56cb" }, "day" : 9, "month" : 3, "names" : [ "Franciszki", "Brunona" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56cc" }, "day" : 10, "month" : 3, "names" : [ "Cypriana", "Marcela", "Aleksandra" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56cd" }, "day" : 11, "month" : 3, "names" : [ "Ludosława", "Konstantyna", "Benedykta" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56ce" }, "day" : 12, "month" : 3, "names" : [ "Grzegorza", "Justyna", "Alojzego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56cf" }, "day" : 13, "month" : 3, "names" : [ "Bożeny", "Krystyny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56d0" }, "day" : 14, "month" : 3, "names" : [ "Leona", "Matyldy", "Łazarza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56d1" }, "day" : 15, "month" : 3, "names" : [ "Longina", "Klemensa", "Ludwiki" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56d2" }, "day" : 16, "month" : 3, "names" : [ "Izabeli", "Oktawii", "Hilarego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56d3" }, "day" : 17, "month" : 3, "names" : [ "Patryka", "Zbigniewa", "Gertrudy" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56d4" }, "day" : 18, "month" : 3, "names" : [ "Cyryla", "Edwarda", "Boguchwały" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56d5" }, "day" : 19, "month" : 3, "names" : [ "Józefa", "Bogdana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56d6" }, "day" : 20, "month" : 3, "names" : [ "Klaudii", "Eufemii", "Maurycego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56d7" }, "day" : 21, "month" : 3, "names" : [ "Lubomira", "Benedykta" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56d8" }, "day" : 22, "month" : 3, "names" : [ "Katarzyny", "Bogusława" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56d9" }, "day" : 23, "month" : 3, "names" : [ "Pelagii", "Oktawiana", "Feliksa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56da" }, "day" : 24, "month" : 3, "names" : [ "Marka", "Gabriela", "Katarzyny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56db" }, "day" : 25, "month" : 3, "names" : [ "Marioli", "Wieäczysława", "Ireneusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56dc" }, "day" : 26, "month" : 3, "names" : [ "Larysy", "Emanyela", "Teodora" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56dd" }, "day" : 27, "month" : 3, "names" : [ "Lidii", "Ernesta" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56de" }, "day" : 28, "month" : 3, "names" : [ "Anieli", "Sykstusa", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56df" }, "day" : 29, "month" : 3, "names" : [ "Wiktoryna", "Helmuta", "Eustachego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56e0" }, "day" : 30, "month" : 3, "names" : [ "Anieli", "Kwiryna", "Leonarda" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56e1" }, "day" : 31, "month" : 3, "names" : [ "Beniamina", "Dobromierza", "Leonarda" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56e2" }, "day" : 1, "month" : 4, "names" : [ "Teodory", "Grażyny", "Ireny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56e3" }, "day" : 2, "month" : 4, "names" : [ "Władysława", "Franciszka", "Teodozji" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56e4" }, "day" : 3, "month" : 4, "names" : [ "Ryszarda", "Pankracego", "Ingi" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56e5" }, "day" : 4, "month" : 4, "names" : [ "Izydora", "Wacława" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56e6" }, "day" : 5, "month" : 4, "names" : [ "Ireny", "Wincentego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56e7" }, "day" : 6, "month" : 4, "names" : [ "Izoldy", "Celestyna", "Wilhelma" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56e8" }, "day" : 7, "month" : 4, "names" : [ "Rufina", "Celestyna", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56e9" }, "day" : 8, "month" : 4, "names" : [ "Cezaryny", "Dionizego", "Julii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56ea" }, "day" : 9, "month" : 4, "names" : [ "Marii", "Dymitra", "Heliodora" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56eb" }, "day" : 10, "month" : 4, "names" : [ "Michała", "Makarego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56ec" }, "day" : 11, "month" : 4, "names" : [ "Filipa", "Leona" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56ed" }, "day" : 12, "month" : 4, "names" : [ "Juliusza", "Lubosława", "Zenona" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56ee" }, "day" : 13, "month" : 4, "names" : [ "Przemysława", "Hermenegildy", "Marcina" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56ef" }, "day" : 14, "month" : 4, "names" : [ "Bereniki", "Waleriana", "Justyny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56f0" }, "day" : 15, "month" : 4, "names" : [ "Ludwiny", "Wacławy", "Anastazji" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56f1" }, "day" : 16, "month" : 4, "names" : [ "Kseni", "Cecylii", "Bernardety" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56f2" }, "day" : 17, "month" : 4, "names" : [ "Rudolfa", "Roberta" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56f3" }, "day" : 18, "month" : 4, "names" : [ "Bogusławy", "Apoloniusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56f4" }, "day" : 19, "month" : 4, "names" : [ "Adolfa", "Tymona", "Leona" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56f5" }, "day" : 20, "month" : 4, "names" : [ "Czesława", "Agnieszki", "Mariana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56f6" }, "day" : 21, "month" : 4, "names" : [ "Anzelma", "Bartosza", "Feliksa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56f7" }, "day" : 22, "month" : 4, "names" : [ "Kai", "Leonii", "Sotera" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56f8" }, "day" : 23, "month" : 4, "names" : [ "Jerzego", "Wojciecha" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56f9" }, "day" : 24, "month" : 4, "names" : [ "Horacego", "Feliksa", "Grzegorza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56fa" }, "day" : 25, "month" : 4, "names" : [ "Marka", "Jarosława" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56fb" }, "day" : 26, "month" : 4, "names" : [ "Marzeny", "Klaudiusza", "Marii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56fc" }, "day" : 27, "month" : 4, "names" : [ "Zyty", "Teofila", "Felicji" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56fd" }, "day" : 28, "month" : 4, "names" : [ "Piotra", "Walerii", "Witalisa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56fe" }, "day" : 29, "month" : 4, "names" : [ "Rity", "Katarzyny", "Bogusława" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede56ff" }, "day" : 30, "month" : 4, "names" : [ "Mariana", "Donaty", "Tamary" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5700" }, "day" : 1, "month" : 5, "names" : [ "Józefa", "Jeremiasza", "Filipa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5701" }, "day" : 2, "month" : 5, "names" : [ "Zygmunta", "Atanazego", "Anatola" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5702" }, "day" : 3, "month" : 5, "names" : [ "Marii", "Antoniny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5703" }, "day" : 4, "month" : 5, "names" : [ "Moniki", "Floriana", "Władysława" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5704" }, "day" : 5, "month" : 5, "names" : [ "Ireny", "Waldemara" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5705" }, "day" : 6, "month" : 5, "names" : [ "Judyty", "Jakuba", "Filipa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5706" }, "day" : 7, "month" : 5, "names" : [ "Gizeli", "Ludmiły", "Benedykta" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5707" }, "day" : 8, "month" : 5, "names" : [ "Stanisława", "Lizy", "Wiktora" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5708" }, "day" : 9, "month" : 5, "names" : [ "Bożydara", "Grzegorza", "Karoliny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5709" }, "day" : 10, "month" : 5, "names" : [ "Izydora", "Antoniny", "Symeona" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede570a" }, "day" : 11, "month" : 5, "names" : [ "Igi", "Miry", "Władysławy" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede570b" }, "day" : 12, "month" : 5, "names" : [ "Pankracego", "Dominika", "Achillesa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede570c" }, "day" : 13, "month" : 5, "names" : [ "Serwacego", "Roberta", "Glorii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede570d" }, "day" : 14, "month" : 5, "names" : [ "Bonifacego", "Dobiesława", "Macieja" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede570e" }, "day" : 15, "month" : 5, "names" : [ "Zofii", "Nadziei", "Izydora" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede570f" }, "day" : 16, "month" : 5, "names" : [ "Andrzeja", "Jędrzeja", "Szymona" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5710" }, "day" : 17, "month" : 5, "names" : [ "Paschalisa", "Sławomira", "Weroniki" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5711" }, "day" : 18, "month" : 5, "names" : [ "Eryka", "Feliksa", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5712" }, "day" : 19, "month" : 5, "names" : [ "Iwa", "Piotra", "Celestyna" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5713" }, "day" : 20, "month" : 5, "names" : [ "Bazylego", "Bernardyna", "Aleksandra" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5714" }, "day" : 21, "month" : 5, "names" : [ "Wiktora", "Kryspina", "Tymoteusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5715" }, "day" : 22, "month" : 5, "names" : [ "Heleny", "Wiesławy", "Ryty" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5716" }, "day" : 23, "month" : 5, "names" : [ "Iwony", "Dezyderego", "Kryspina" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5717" }, "day" : 24, "month" : 5, "names" : [ "Joanny", "Zuzanny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5718" }, "day" : 25, "month" : 5, "names" : [ "Grzegorza", "Urbana", "Magdaleny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5719" }, "day" : 26, "month" : 5, "names" : [ "Filipa", "Pauliny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede571a" }, "day" : 27, "month" : 5, "names" : [ "Augustyna", "Juliana", "Magdaleny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede571b" }, "day" : 28, "month" : 5, "names" : [ "Jaromira", "Justa", "Justyny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede571c" }, "day" : 29, "month" : 5, "names" : [ "Magdaleny", "Bogumiły", "Urszuli" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede571d" }, "day" : 30, "month" : 5, "names" : [ "Ferdynanda", "Karola", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede571e" }, "day" : 31, "month" : 5, "names" : [ "Anieli", "Petroneli" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede571f" }, "day" : 1, "month" : 6, "names" : [ "Justyna", "Anieli", "Konrada" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5720" }, "day" : 2, "month" : 6, "names" : [ "Marianny", "Marcelina", "Piotra" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5721" }, "day" : 3, "month" : 6, "names" : [ "Leszka", "Tamary", "Karola" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5722" }, "day" : 4, "month" : 6, "names" : [ "Kwiryny", "Franciszka" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5723" }, "day" : 5, "month" : 6, "names" : [ "Waltera", "Bonifacego", "Walerii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5724" }, "day" : 6, "month" : 6, "names" : [ "Norberta", "Laurentego", "Bogumiła" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5725" }, "day" : 7, "month" : 6, "names" : [ "Roberta", "Wiesława" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5726" }, "day" : 8, "month" : 6, "names" : [ "Medarda", "Maksyma", "Seweryna" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5727" }, "day" : 9, "month" : 6, "names" : [ "Pelagii", "Dominika", "Efrema" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5728" }, "day" : 10, "month" : 6, "names" : [ "Bogumiła", "Małgorzaty", "Diany" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5729" }, "day" : 11, "month" : 6, "names" : [ "Barnaby", "Radomiła", "Feliksa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede572a" }, "day" : 12, "month" : 6, "names" : [ "Janiny", "Onufrego", "Leona" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede572b" }, "day" : 13, "month" : 6, "names" : [ "Lucjana", "Antoniego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede572c" }, "day" : 14, "month" : 6, "names" : [ "Bazylego", "Elwiry", "Michała" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede572d" }, "day" : 15, "month" : 6, "names" : [ "Wita", "Jolanty" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede572e" }, "day" : 16, "month" : 6, "names" : [ "Anny", "Aliny", "Benona", "Anety" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede572f" }, "day" : 17, "month" : 6, "names" : [ "Laury", "Marcjana", "Alberta" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5730" }, "day" : 18, "month" : 6, "names" : [ "Marka", "Elżbiety" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5731" }, "day" : 19, "month" : 6, "names" : [ "Gerwazego", "Protazego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5732" }, "day" : 20, "month" : 6, "names" : [ "Diny", "Bogny", "Florentyny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5733" }, "day" : 21, "month" : 6, "names" : [ "Alicji", "Alojzego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5734" }, "day" : 22, "month" : 6, "names" : [ "Pauliny", "Tomasza", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5735" }, "day" : 23, "month" : 6, "names" : [ "Wandy", "Zenona" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5736" }, "day" : 24, "month" : 6, "names" : [ "Jana", "Danuty" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5737" }, "day" : 25, "month" : 6, "names" : [ "Łucji", "Wilhelma", "Doroty" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5738" }, "day" : 26, "month" : 6, "names" : [ "Jana", "Pawła" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5739" }, "day" : 27, "month" : 6, "names" : [ "Maryli", "Władysława", "Cyryla" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede573a" }, "day" : 28, "month" : 6, "names" : [ "Leona", "Ireneusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede573b" }, "day" : 29, "month" : 6, "names" : [ "Piotra", "Pawła" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede573c" }, "day" : 30, "month" : 6, "names" : [ "Emilii", "Lucyny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede573d" }, "day" : 1, "month" : 7, "names" : [ "Haliny", "Mariana", "Marcina" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede573e" }, "day" : 2, "month" : 7, "names" : [ "Jagody", "Urbama", "Marii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede573f" }, "day" : 3, "month" : 7, "names" : [ "Jacka", "Anatola", "Tomasza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5740" }, "day" : 4, "month" : 7, "names" : [ "Odona", "Malwiny", "Elżbiety" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5741" }, "day" : 5, "month" : 7, "names" : [ "Marii", "Antoniego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5742" }, "day" : 6, "month" : 7, "names" : [ "Gotarda", "Dominiki", "Łucji" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5743" }, "day" : 7, "month" : 7, "names" : [ "Cyryla", "Estery", "Metodego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5744" }, "day" : 8, "month" : 7, "names" : [ "Edgara", "Elżbiety", "Eugeniusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5745" }, "day" : 9, "month" : 7, "names" : [ "Lukrecji", "Weroniki", "Zenona" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5746" }, "day" : 10, "month" : 7, "names" : [ "Sylwany", "Witalisa", "Antoniego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5747" }, "day" : 11, "month" : 7, "names" : [ "Olgi", "Kaliny", "Benedykta" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5748" }, "day" : 12, "month" : 7, "names" : [ "Jana", "Brunona", "Bonifacego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5749" }, "day" : 13, "month" : 7, "names" : [ "Henryka", "Kingi", "Andrzeja" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede574a" }, "day" : 14, "month" : 7, "names" : [ "Ulryka", "Bonawentury", "Kamila" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede574b" }, "day" : 15, "month" : 7, "names" : [ "Henryka", "Włodzimierza", "Dawida" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede574c" }, "day" : 16, "month" : 7, "names" : [ "Mariki", "Benity", "Eustachego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede574d" }, "day" : 17, "month" : 7, "names" : [ "Anety", "Bogdana", "Jadwigi" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede574e" }, "day" : 18, "month" : 7, "names" : [ "Erwina", "Kamila", "Szymona" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede574f" }, "day" : 19, "month" : 7, "names" : [ "Wincentego", "Wodzisława", "Marcina" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5750" }, "day" : 20, "month" : 7, "names" : [ "Czesława", "Hieronioma", "Małgorzaty" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5751" }, "day" : 21, "month" : 7, "names" : [ "Daniela", "Dalidy", "Wawrzyäca" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5752" }, "day" : 22, "month" : 7, "names" : [ "Marii", "Magdaleny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5753" }, "day" : 23, "month" : 7, "names" : [ "Stwosza", "Bogny", "Brygidy" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5754" }, "day" : 24, "month" : 7, "names" : [ "Kingi", "Krystyny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5755" }, "day" : 25, "month" : 7, "names" : [ "Walentyny", "Krzysztofa", "Jakuba" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5756" }, "day" : 26, "month" : 7, "names" : [ "Anny", "Mirosławy", "Grażyny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5757" }, "day" : 27, "month" : 7, "names" : [ "Lilii", "Julii", "Natalii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5758" }, "day" : 28, "month" : 7, "names" : [ "Aidy", "Marceli", "Wiktora" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5759" }, "day" : 29, "month" : 7, "names" : [ "Olafa", "Marty", "Ludmiły" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede575a" }, "day" : 30, "month" : 7, "names" : [ "Julity", "Piotra", "Aldony" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede575b" }, "day" : 31, "month" : 7, "names" : [ "Ignacego", "Lubomira", "Heleny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede575c" }, "day" : 1, "month" : 8, "names" : [ "Nadii", "Justyna", "Juliana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede575d" }, "day" : 2, "month" : 8, "names" : [ "Kariny", "Gustawa", "Euzebiusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede575e" }, "day" : 3, "month" : 8, "names" : [ "Lidii", "Augusta", "Nikodema" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede575f" }, "day" : 4, "month" : 8, "names" : [ "Dominika", "Protazego", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5760" }, "day" : 5, "month" : 8, "names" : [ "Oswalda", "Marii", "Mariana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5761" }, "day" : 6, "month" : 8, "names" : [ "Sławy", "Jakuba", "Oktawiana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5762" }, "day" : 7, "month" : 8, "names" : [ "Kajetana", "Doroty", "Sykstusa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5763" }, "day" : 8, "month" : 8, "names" : [ "Cypriana", "Emiliana", "Dominika" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5764" }, "day" : 9, "month" : 8, "names" : [ "Romana", "Ryszarda", "Edyty" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5765" }, "day" : 10, "month" : 8, "names" : [ "Borysa", "Filomeny", "Wawrzyńca" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5766" }, "day" : 11, "month" : 8, "names" : [ "Klary", "Zuzanny", "Lecha" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5767" }, "day" : 12, "month" : 8, "names" : [ "Innocentego", "Lecha", "Euzebii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5768" }, "day" : 13, "month" : 8, "names" : [ "Diany", "Hipolita", "Poncjana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5769" }, "day" : 14, "month" : 8, "names" : [ "Alfreda", "Euzebiusza", "Maksymiliana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede576a" }, "day" : 15, "month" : 8, "names" : [ "Napoleona", "Stelii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede576b" }, "day" : 16, "month" : 8, "names" : [ "Rocha", "Stefana", "Joachima" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede576c" }, "day" : 17, "month" : 8, "names" : [ "Żanny", "Mirona", "Jacka" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede576d" }, "day" : 18, "month" : 8, "names" : [ "Ilony", "Bronisława", "Heleny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede576e" }, "day" : 19, "month" : 8, "names" : [ "Bolesława", "Juliana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede576f" }, "day" : 20, "month" : 8, "names" : [ "Bernarda", "Samuela", "Sobiesława" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5770" }, "day" : 21, "month" : 8, "names" : [ "Joanny", "Kazimiery", "Piusa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5771" }, "day" : 22, "month" : 8, "names" : [ "Cezarego", "Tymoteusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5772" }, "day" : 23, "month" : 8, "names" : [ "Apolinarego", "Filipa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5773" }, "day" : 24, "month" : 8, "names" : [ "Jerzego", "Bartosza", "Haliny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5774" }, "day" : 25, "month" : 8, "names" : [ "Luizy", "Ludwika", "Józefa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5775" }, "day" : 26, "month" : 8, "names" : [ "Marii", "Aleksandra" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5776" }, "day" : 27, "month" : 8, "names" : [ "Józefa", "Kolasantego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5777" }, "day" : 28, "month" : 8, "names" : [ "Patrycji", "Wyszomira", "Augustyna" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5778" }, "day" : 29, "month" : 8, "names" : [ "Jana", "Sabiny", "Racibora" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5779" }, "day" : 30, "month" : 8, "names" : [ "Róży", "Szczęsnego", "Feliksa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede577a" }, "day" : 31, "month" : 8, "names" : [ "Ramony", "Rajmunda", "Bogdana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede577b" }, "day" : 1, "month" : 9, "names" : [ "Idziego", "Bronisława" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede577c" }, "day" : 2, "month" : 9, "names" : [ "Stefana", "Wilhelma", "Juliana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede577d" }, "day" : 3, "month" : 9, "names" : [ "Izabeli", "Szymona", "Grzegorza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede577e" }, "day" : 4, "month" : 9, "names" : [ "Rozalii", "Róży" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede577f" }, "day" : 5, "month" : 9, "names" : [ "Doroty", "Wawrzyńca", "Teodora" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5780" }, "day" : 6, "month" : 9, "names" : [ "Beaty", "Eugeniusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5781" }, "day" : 7, "month" : 9, "names" : [ "Reginy", "Melchiora", "Domosławy" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5782" }, "day" : 8, "month" : 9, "names" : [ "Marii", "Adrianny", "Serafiny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5783" }, "day" : 9, "month" : 9, "names" : [ "Ścibora", "Sergiusza", "Piotra" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5784" }, "day" : 10, "month" : 9, "names" : [ "Łukasza", "Aldony", "Mścisława" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5785" }, "day" : 11, "month" : 9, "names" : [ "Jacka", "Prota", "Dagny", "Hiacynta" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5786" }, "day" : 12, "month" : 9, "names" : [ "Gwidona", "Radzimira", "Marii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5787" }, "day" : 13, "month" : 9, "names" : [ "Eugenii", "Aureliusza", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5788" }, "day" : 14, "month" : 9, "names" : [ "Roksany", "Bernarda", "Cypriana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5789" }, "day" : 15, "month" : 9, "names" : [ "Albina", "Nikodema", "Marii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede578a" }, "day" : 16, "month" : 9, "names" : [ "Edyty", "Korneliusza", "Cypriana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede578b" }, "day" : 17, "month" : 9, "names" : [ "Franciszka", "Roberta", "Justyna" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede578c" }, "day" : 18, "month" : 9, "names" : [ "Irmy", "Stanisława", "Ireny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede578d" }, "day" : 19, "month" : 9, "names" : [ "Januarego", "Konstancji", "Teodora" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede578e" }, "day" : 20, "month" : 9, "names" : [ "Filipiny", "Eustachego", "Euzebii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede578f" }, "day" : 21, "month" : 9, "names" : [ "Jonasza", "Mateusza", "Hipolita" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5790" }, "day" : 22, "month" : 9, "names" : [ "Tomasza", "Maurycego", "Joachima" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5791" }, "day" : 23, "month" : 9, "names" : [ "Tekli", "Bogusława", "Linusa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5792" }, "day" : 24, "month" : 9, "names" : [ "Gerarda", "Ruperta", "Tomiry" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5793" }, "day" : 25, "month" : 9, "names" : [ "Aurelii", "Władysława", "Kleofasa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5794" }, "day" : 26, "month" : 9, "names" : [ "Wawrzyńca", "Kosmy", "Damiana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5795" }, "day" : 27, "month" : 9, "names" : [ "Wincentego", "Mirabeli", "Justyny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5796" }, "day" : 28, "month" : 9, "names" : [ "Wacława", "Tymona", "Marka" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5797" }, "day" : 29, "month" : 9, "names" : [ "Michała", "Gabriela", "Rafała" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5798" }, "day" : 30, "month" : 9, "names" : [ "Wery", "Honoriusza", "Hieronima" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede5799" }, "day" : 1, "month" : 10, "names" : [ "Danuty", "Remigiusza", "Teresy" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede579a" }, "day" : 2, "month" : 10, "names" : [ "Teofila", "Dionizego", "Sławomira" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede579b" }, "day" : 3, "month" : 10, "names" : [ "Teresy", "Heliodora", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede579c" }, "day" : 4, "month" : 10, "names" : [ "Rozalii", "Edwina", "Franciszka" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede579d" }, "day" : 5, "month" : 10, "names" : [ "Placyda", "Apolinarego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede579e" }, "day" : 6, "month" : 10, "names" : [ "Artura", "Brunona" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede579f" }, "day" : 7, "month" : 10, "names" : [ "Marii", "Marka", "Mirelli" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57a0" }, "day" : 8, "month" : 10, "names" : [ "Pelagii", "Brygidy", "Walerii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57a1" }, "day" : 9, "month" : 10, "names" : [ "Amolda", "Dionizego", "Wincentego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57a2" }, "day" : 10, "month" : 10, "names" : [ "Pauliny", "Danieli", "Leona" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57a3" }, "day" : 11, "month" : 10, "names" : [ "Aldony", "Aleksandra", "Dobromiry" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57a4" }, "day" : 12, "month" : 10, "names" : [ "Eustachego", "Maksymiliana", "Edwina" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57a5" }, "day" : 13, "month" : 10, "names" : [ "Geralda", "Edwarda", "Honorata" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57a6" }, "day" : 14, "month" : 10, "names" : [ "Liwii", "Kaliksta", "Bernarda" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57a7" }, "day" : 15, "month" : 10, "names" : [ "Jadwigi", "Teresy", "Florentyny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57a8" }, "day" : 16, "month" : 10, "names" : [ "Gawła", "Ambrożego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57a9" }, "day" : 17, "month" : 10, "names" : [ "Wiktora", "Marity", "Ignacego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57aa" }, "day" : 18, "month" : 10, "names" : [ "Juliana", "Łukasza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57ab" }, "day" : 19, "month" : 10, "names" : [ "Ziemowita", "Jana", "Pawła" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57ac" }, "day" : 20, "month" : 10, "names" : [ "Ireny", "Kleopatry", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57ad" }, "day" : 21, "month" : 10, "names" : [ "Urszuli", "Hilarego", "Jakuba" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57ae" }, "day" : 22, "month" : 10, "names" : [ "Halki", "Filipa", "Salomei" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57af" }, "day" : 23, "month" : 10, "names" : [ "Marleny", "Seweryna", "Igi" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57b0" }, "day" : 24, "month" : 10, "names" : [ "Rafała", "Marcina", "Antoniego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57b1" }, "day" : 25, "month" : 10, "names" : [ "Darii", "Wilhelminy", "Bonifacego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57b2" }, "day" : 26, "month" : 10, "names" : [ "Lucjana", "Ewarysta", "Damiana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57b3" }, "day" : 27, "month" : 10, "names" : [ "Iwony", "Sabiny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57b4" }, "day" : 28, "month" : 10, "names" : [ "Szymona", "Tadeusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57b5" }, "day" : 29, "month" : 10, "names" : [ "Euzebii", "Wioletty", "Felicjana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57b6" }, "day" : 30, "month" : 10, "names" : [ "Zenobii", "Przemysława", "Edmunda" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57b7" }, "day" : 31, "month" : 10, "names" : [ "Urbana", "Saturnina", "Krzysztofa" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57b8" }, "day" : 2, "month" : 11, "names" : [ "Bohdany", "Bożydara" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57b9" }, "day" : 3, "month" : 11, "names" : [ "Sylwii", "Marcina", "Huberta" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57ba" }, "day" : 4, "month" : 11, "names" : [ "Karola", "Olgierda" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57bb" }, "day" : 5, "month" : 11, "names" : [ "Elżbiety", "Sławomira", "Dominika" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57bc" }, "day" : 6, "month" : 11, "names" : [ "Feliksa", "Leonarda", "Ziemowita" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57bd" }, "day" : 7, "month" : 11, "names" : [ "Antoniego", "Żytomira", "Ernesta" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57be" }, "day" : 8, "month" : 11, "names" : [ "Seweryna", "Bogdana", "Klaudiusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57bf" }, "day" : 9, "month" : 11, "names" : [ "Aleksandra", "Ludwika", "Teodora" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57c0" }, "day" : 10, "month" : 11, "names" : [ "Leny", "Ludomira", "Leona" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57c1" }, "day" : 11, "month" : 11, "names" : [ "Marcina", "Batłomieja", "Teodora" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57c2" }, "day" : 12, "month" : 11, "names" : [ "Renaty", "Witolda", "Jozafata" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57c3" }, "day" : 13, "month" : 11, "names" : [ "Mateusza", "Izaaka", "Stanisława" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57c4" }, "day" : 14, "month" : 11, "names" : [ "Rogera", "Serafina", "Wawrzyäca" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57c5" }, "day" : 15, "month" : 11, "names" : [ "Alberta", "Leopolda" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57c6" }, "day" : 16, "month" : 11, "names" : [ "Gertrudy", "Edmunda", "Marii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57c7" }, "day" : 17, "month" : 11, "names" : [ "Salomei", "Grzegorza", "Elżbiety" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57c8" }, "day" : 18, "month" : 11, "names" : [ "Romana", "Klaudyny", "Karoliny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57c9" }, "day" : 19, "month" : 11, "names" : [ "Seweryny", "Maksyma", "Salomei" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57ca" }, "day" : 20, "month" : 11, "names" : [ "Anatola", "Sędzimira", "Rafała" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57cb" }, "day" : 21, "month" : 11, "names" : [ "Janusza" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57cc" }, "day" : 22, "month" : 11, "names" : [ "Cecylii", "Wszemiły", "Stefana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57cd" }, "day" : 23, "month" : 11, "names" : [ "Adelii", "Klemensa", "Felicyty" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57ce" }, "day" : 24, "month" : 11, "names" : [ "Flory", "Emmy", "Chryzogona" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57cf" }, "day" : 25, "month" : 11, "names" : [ "Erazma", "Katarzyny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57d0" }, "day" : 26, "month" : 11, "names" : [ "Delfiny", "Sylwestra", "Konrada" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57d1" }, "day" : 27, "month" : 11, "names" : [ "Waleriana", "Wirgiliusza", "Maksyma" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57d2" }, "day" : 28, "month" : 11, "names" : [ "Lesława", "Zdzisława", "Stefana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57d3" }, "day" : 29, "month" : 11, "names" : [ "Błażeja", "Saturnina" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57d4" }, "day" : 30, "month" : 11, "names" : [ "Andrzeja", "Maury", "Konstantego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57d5" }, "day" : 1, "month" : 12, "names" : [ "Natalii", "Eligiusza", "Edmunda" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57d6" }, "day" : 2, "month" : 12, "names" : [ "Balbiny", "Bibianny", "Pauliny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57d7" }, "day" : 3, "month" : 12, "names" : [ "Franciszka", "Ksawerego", "Kasjana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57d8" }, "day" : 4, "month" : 12, "names" : [ "Barbary", "Krystiana", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57d9" }, "day" : 5, "month" : 12, "names" : [ "Sabiny", "Krystyny", "Edyty" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57da" }, "day" : 6, "month" : 12, "names" : [ "Mikołaja", "Jaremy", "Emiliana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57db" }, "day" : 7, "month" : 12, "names" : [ "Marcina", "Ambrożego", "Teodora" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57dc" }, "day" : 8, "month" : 12, "names" : [ "Marii", "Światozara", "Makarego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57dd" }, "day" : 9, "month" : 12, "names" : [ "Wiesława", "Leokadii", "Joanny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57de" }, "day" : 10, "month" : 12, "names" : [ "Julii", "Danieli", "Bogdana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57df" }, "day" : 11, "month" : 12, "names" : [ "Damazego", "Waldemara", "Daniela" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57e0" }, "day" : 12, "month" : 12, "names" : [ "Dagmary", "Aleksandra", "Ady" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57e1" }, "day" : 13, "month" : 12, "names" : [ "Łucji", "Otylii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57e2" }, "day" : 14, "month" : 12, "names" : [ "Alfreda", "Izydora", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57e3" }, "day" : 15, "month" : 12, "names" : [ "Niny", "Celiny", "Waleriana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57e4" }, "day" : 16, "month" : 12, "names" : [ "Albiny", "Zdzisławy", "Alicji" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57e5" }, "day" : 17, "month" : 12, "names" : [ "Olimpii", "Łazarza", "Floriana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57e6" }, "day" : 18, "month" : 12, "names" : [ "Gracjana", "Bogusława", "Laurencji" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57e7" }, "day" : 19, "month" : 12, "names" : [ "Gabrieli", "Dariusza", "Eleonory" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57e8" }, "day" : 20, "month" : 12, "names" : [ "Bogumiły", "Dominika" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57e9" }, "day" : 21, "month" : 12, "names" : [ "Tomisława", "Seweryna", "Piotra" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57ea" }, "day" : 22, "month" : 12, "names" : [ "Zenona", "Honoraty", "Franciszki" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57eb" }, "day" : 23, "month" : 12, "names" : [ "Wiktorii", "Sławomiry", "Jana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57ec" }, "day" : 24, "month" : 12, "names" : [ "Adama", "Ewy", "Eweliny" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57ed" }, "day" : 25, "month" : 12, "names" : [ "Anastazji", "Eugenii" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57ee" }, "day" : 26, "month" : 12, "names" : [ "Dionizego", "Szczepana" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57ef" }, "day" : 27, "month" : 12, "names" : [ "Jana", "Żanety", "Maksyma" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57f0" }, "day" : 28, "month" : 12, "names" : [ "Teofilii", "Godzisława", "Cezarego" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57f1" }, "day" : 29, "month" : 12, "names" : [ "Dawida", "Tomasza", "Dominika" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57f2" }, "day" : 30, "month" : 12, "names" : [ "Rainera", "Eugeniusza", "Irmy" ] }
+{ "_id" : { "$oid" : "5106ee6ff71fe4f74ede57f3" }, "day" : 31, "month" : 12, "names" : [ "Sylwestra", "Melanii", "Mariusza" ] }
