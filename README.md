@@ -4,6 +4,8 @@ Zaczynamy od wygenerowania rusztowania aplikacji:
 
     rails new my_apis --skip-bundle --skip-test-unit --skip-active-record
 
+i edycji pliku [Gemfile](Gemfile).
+
 Podręczne linki:
 
 * [rails-api](https://github.com/rails-api/rails-api)
