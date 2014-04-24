@@ -15,8 +15,8 @@ Podręczne linki:
 ### Post Install
 
 ```sh
-rails-api g rspec:init
-rails-api g mongoid:config
+rails g rspec:init
+rails g mongoid:config
 ```
 
 ### Mongoid + Active Model Serializers
