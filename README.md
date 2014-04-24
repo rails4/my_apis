@@ -67,12 +67,12 @@ Na koniec uaktualniamy plik konfiguracyjny [mongoid.yml](config/mongoid.yml).
 ## Designing an API
 
 Poniżej skorzystamy z danych zapisanych w kolekcji
-*books* w bazie *test*.
+*books* w bazie *my_apis_development*.
 
 Generujemy model *Book*:
 
 ```sh
-rails g model Book c:string t:string
+rails g model Book c:string t:string    # paragraph, title
   invoke  mongoid
   create    app/models/book.rb
   invoke    rspec
