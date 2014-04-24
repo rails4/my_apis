@@ -1,0 +1,27 @@
+<h1>Books</h1>
+
+<%= form_for(:books, method: :get) do -%>
+<p>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag "Search", name: nil %>
+</p>
+<% end -%>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>#</th>
+      <th>Paragraph</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.t %></td>
+        <td><%= book._id %></td>
+        <td><%= book.c %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

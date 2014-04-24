@@ -82,19 +82,29 @@ rails g model Book c:string t:string
 Generujemy kontroller *BooksController*:
 
 ```sh
-rails g controller Books show
+rails g controller Books index show
 ```
 
 poprawiamy routing w pliku *config/routes.rb*:
 
 ```ruby
-resources :books, only: [:show]
+resources :books, only: [:index, :show]
 ```
 
-i implementujemy metodę *show*:
+i implementujemy metody *index* and *show*:
 
 ```ruby
 class BooksController < ApplicationController
+  def index
+    query = params[:search]
+    @books = Book.search(query).limit(4)
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @books }
+    end
+  end
+
   def show
     @book = Book.find params[:id].to_i
 
@@ -105,5 +115,27 @@ class BooksController < ApplicationController
   end
 end
 ```
+
+Metodę *search* dopisujemy w modelu *Book*:
+
+```ruby
+class Book
+  include Mongoid::Document
+  field :c, type: String
+  field :t, type: String
+
+  index c: 1
+
+  def self.search(query)
+    if query
+      search = Regexp.new(query, Regexp::IGNORECASE)
+      asc(:id).where(c: search)
+    else
+      asc(:id)
+    end
+  end
+end
+```
+
 
 ### TODO: authentication
