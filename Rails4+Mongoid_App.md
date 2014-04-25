@@ -102,9 +102,9 @@ end
 Formularz z widoku *books/index.html.erb*:
 
 ```rhtml
-<%= form_for(:books, method: :get) do -%>
+<%= form_tag :books, method: :get do -%>
 <p>
-  <%= text_field_tag :search, params[:search] %>
+  <%= text_field_tag :search %>
   <%= submit_tag "Search", name: nil %>
 </p>
 <% end -%>
