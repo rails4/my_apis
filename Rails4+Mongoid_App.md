@@ -97,6 +97,19 @@ class Book
 end
 ```
 
+### Widoki
+
+Formularz z widoku *books/index.html.erb*:
+
+```rhtml
+<%= form_for(:books, method: :get) do -%>
+<p>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag "Search", name: nil %>
+</p>
+<% end -%>
+```
+
 ### Kontroler
 
 Generujemy kontroller *BooksController*:
