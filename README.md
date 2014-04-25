@@ -83,3 +83,10 @@ end
 ```
 
 Dlaczego takie rozwiązanie jest lepsze?
+
+
+## CORS
+
+Without CORS – sharing data with application.
+
+With CORS – sharing data with world.
