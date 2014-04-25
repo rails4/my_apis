@@ -8,9 +8,8 @@ i edycji pliku [Gemfile](Gemfile).
 
 Linki do dokumentacji gemów:
 
-* [rails-api](https://github.com/rails-api/rails-api)
-* [active_model_serializers](https://github.com/rails-api/active_model_serializers)
 * [mongoid](http://mongoid.org/en/mongoid/index.html)
+* [active_model_serializers](https://github.com/rails-api/active_model_serializers)
 
 
 ### Post Install

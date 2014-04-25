@@ -7,6 +7,7 @@ Zaczynamy:
 
 TODO:
 
+* [rails-api](https://github.com/rails-api/rails-api)
 * [rack-cors](https://github.com/cyu/rack-cors)
 
 
