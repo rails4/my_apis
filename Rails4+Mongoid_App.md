@@ -154,7 +154,7 @@ end
 Uruchamiamy bazę MongoDB:
 
 ```sh
-bin/mongod.sh
+bin/mongod.sh  # z moimi ścieżkami do mongod
 ```
 
 Uruchamiamy serwer www (*thin*):
