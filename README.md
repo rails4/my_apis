@@ -43,7 +43,7 @@ end
 
 Request:
 ```
-curl -si localhost:3000/books/8.json
+curl -s localhost:3000/books/8.json
 ```
 Response:
 ```
@@ -53,3 +53,13 @@ Response:
   "t":"war and peace"
 }
 ```
+
+## NO: tweaking json response
+
+Przechodzimy na gałąź `add_metadata_to_json`:
+
+```sh
+git co add_metadata_to_json
+```
+
+Tweaking code in [BooksController](app/controllers/books_controller.rb).
