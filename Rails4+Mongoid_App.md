@@ -132,6 +132,7 @@ class BooksController < ApplicationController
     query = params[:search]
     @books = Book.search(query).limit(4)
 
+    # render HTML and JSON
     respond_to do |format|
       format.html
       format.json { render json: @books }
