@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Лев Толстой, Война и миръ</title>
+    <style>
+      html, body {
+        background-color: #C03000;
+        font-family: Verdana, Helvetica, Arial;
+        font-size: 14px;
+      }
+      a { color: #0000FF; }
+
+      #container {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #FFF;
+        padding: 20px 40px;
+        border: solid 1px black;
+        margin-top: 20px;
+      }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+    <script>
+    // http://www.infinite-scroll.com/infinite-scroll-jquery-plugin/
+
+    $(function() {
+      console.log('is CORS supported?', $.support.cors);
+
+      function addParagraphs(data, textStatus, jqXHR) {
+        if (data.length == 0) {
+          $(window).unbind('scroll');
+        } else {
+          var items = [];
+          $.each(data, function() {
+            items.push('<li value="' + this.id +1 + '">' + this.para + '</li>');
+          });
+          $('#paragraphs').append(items.join('\n'));
+        }
+      }
+
+      // bind anonymous function to scroll event
+
+      $(window).scroll(function() {
+        if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+          var data = $.data(document.body, 'paragraphs');
+          $.data(document.body, 'paragraphs', { page: data.page + 1, per_page: 250 });
+
+          // $.getJSON('/paragraphs', { page: data.page, per_page: data.per_page }, addParagraphs);
+          $.getJSON('http://sigma.ug.edu.pl:44444/api/v1/paragraphs', { page: data.page, per_page: data.per_page }, addParagraphs);
+          // $.getJSON('http://localhost:3000/paragraphs', { page: data.page, per_page: data.per_page }, addParagraphs);
+        }
+      });
+
+      // set data attributes and trigger scroll event
+
+      $.data(document.body, 'paragraphs', { page: 1, per_page: 250 });
+      $(window).scroll();
+
+    });
+    </script>
+
+  <body>
+    <div id="container">
+      <h1>Leo Tolstoy, War and Peace</h1>
+      <ol id="paragraphs"></ol>
+    </div>
+  </body>
+</html>
+
