@@ -141,6 +141,7 @@ class BooksController < ApplicationController
   def show
     @book = Book.find params[:id].to_i
 
+    # render HTML and JSON
     respond_to do |format|
       format.html
       format.json { render json: @book }

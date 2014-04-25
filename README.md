@@ -9,7 +9,8 @@ TODO:
 
 * [rails-api](https://github.com/rails-api/rails-api)
 * [rack-cors](https://github.com/cyu/rack-cors)
-
+* [HTTP authentications](http://guides.rubyonrails.org/action_controller_overview.html#http-authentications)
+* [force HTTPS protocol](http://guides.rubyonrails.org/action_controller_overview.html#force-https-protocol)
 
 
 ## Designing an API
