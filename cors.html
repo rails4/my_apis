@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CORS test: http://sigma.ug.edu.pl:4444/api/v1/names</title>
+    <!-- ssh na sigmę:
+      mongod.sh
+      cd Bitbucket/cors-data-server
+      rails s -p 4444
+    -->
+    <style>
+    html, body {
+      background-color: #C03000;
+      font-family: Verdana, Helvetica, Arial;
+      font-size: 14px;
+    }
+    a { color: #0000FF; }
+    h1 { font-size: 140%; color: #C03000;}
+    ul { list-style: none; padding-left: 0; }
+    .first { width: 280px; display: inline-block; }
+    #name_first { width: 280px; }
+
+    #container {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      background-color: #FFF;
+      padding: 20px 40px;
+      border: solid 1px black;
+      margin-top: 20px;
+      }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="/js/serializeForm.js"></script>
+
+    <script>
+    $(function() {
+
+      console.log('is CORS supported?', $.support.cors);
+
+      var url = 'http://sigma.ug.edu.pl:4444/api/v1/names';
+
+      var template = function(obj) {
+        return '<li><span class="first">' + obj.first + '</span> <button value="' +  obj.id + '">Delete</button></li>';
+      };
+
+      // get data and fill ul#names
+      $.getJSON(url, function(data) {
+        // console.log(JSON.stringify(data));
+        var li = [];
+        $.each(data.names, function() {
+          // console.log(this);
+          li.push(template(this));
+        });
+        $('#names').append(li.join('\n'));
+      });
+
+      // add name
+      $('.button').on('click', function(event) {
+        var params = $('#new_name').serializeForm();
+        // console.log('params:', params);
+
+        $('#name_first').val(''); // clear up input
+        $.post(url, params, function(data, textStatus) {
+          console.log('post status:', textStatus);
+          $('#names').append(template(data.name));
+        }, 'json');
+      });
+
+      // delete name
+      $('ul').on('click', 'button[value]', function(event) {
+        var  id = $(this).attr('value');
+        var $el = $(this).parent(); // li element
+        // console.log('delete:', id);
+        $.ajax({ url: url + '/' + id, type: 'DELETE' })
+          .done(function (data, textStatus) {
+            // console.log('delete status:', textStatus);
+            $el.remove(); // from the DOM
+          });
+      });
+
+      // prevent the form#new_name from being submitted
+      $('#new_name').on('submit', false);
+
+    });
+    </script>
+
+  <body>
+    <!-- https://github.com/danheberden/jquery-serializeForm -->
+
+    <div id="container">
+      <h1>CORS test: Names</h1>
+      <h3>http://sigma.ug.edu.pl:4444/api/v1/names</h3>
+
+      <form id="new_name" class="new_name" accept-charset="utf-8">
+        <div style="margin:0;padding:0;display:inline">
+          <input name="utf8" type="hidden" value="&#x2713;">
+        </div>
+        <div class="inputs">
+          <input id="name_first" name="name[first]" type="text"><input
+              class="button" name="commit" type="submit" value="Add Name">
+        </div>
+      </form>
+
+      <ul id='names'></ul>
+    </div>
+
+  </body>
+</html>
