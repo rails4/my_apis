@@ -54,7 +54,7 @@ Response:
 }
 ```
 
-## NO: tweaking json response
+## No: Tweaking json response
 
 Przechodzimy na gałąź `add_metadata_to_json`:
 
@@ -63,3 +63,23 @@ git co add_metadata_to_json
 ```
 
 Tweaking code in [BooksController](app/controllers/books_controller.rb).
+
+
+## Yes: ActiveModel::Serializers
+
+Generujemy serializer:
+
+```
+rails g serializer book
+```
+
+Dopisujemy do wygenerowanego pliku *app/serializers/book_serializer.rb*
+pozostałe atrybuty:
+
+```ruby
+class BookSerializer < ActiveModel::Serializer
+  attributes :id, :c, :t
+end
+```
+
+Dlaczego takie rozwiązanie jest lepsze?
