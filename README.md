@@ -1,9 +1,13 @@
 ## REST API
 
+The simple ways to think of an API is:
+
+1. share DATA with my application
+1. share DATA with world
+
 Zaczynamy:
 
 * [Aplikacja Rails 4](Rails4+Mongoid_App.md)
-
 
 TODO:
 
@@ -13,27 +17,23 @@ TODO:
 * [force HTTPS protocol](http://guides.rubyonrails.org/action_controller_overview.html#force-https-protocol)
 
 
-## Designing an API
+## JSONs sharing
 
 Poniżej skorzystamy z danych zapisanych w kolekcji
-*books* w bazie *my_apis_development*.
+*books* w bazie *my_apis_development*:
 
 ```ruby
 class BooksController < ApplicationController
   def index
-    query = params[:search]
-    @books = Book.search(query).limit(4)
-
+    ...
     respond_to do |format|
       format.html
       format.json { render json: @books }
     end
   end
-
   def show
-    @book = Book.find params[:id].to_i
-
-    respond_to do |format|
+   ...
+   respond_to do |format|
       format.html
       format.json { render json: @book }
     end
@@ -41,5 +41,15 @@ class BooksController < ApplicationController
 end
 ```
 
-
-### TODO: authentication
+Request:
+```
+curl -si localhost:3000/books/8.json
+```
+Response:
+```
+{
+  "_id":0,
+  "c":"An Anonymous Volunteer, and David Widger",
+  "t":"war and peace"
+}
+```
