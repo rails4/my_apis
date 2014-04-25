@@ -84,6 +84,18 @@ end
 
 Dlaczego takie rozwiązanie jest lepsze?
 
+TODO: Podmieniamy `:c` na `:para`; usuwamy `:t`?
+
+```ruby
+class BookSerializer < ActiveModel::Serializer
+  attributes :id, :para
+
+  def para
+    c
+  end
+end
+```
+
 
 ## CORS
 

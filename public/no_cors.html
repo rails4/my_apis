@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>CORS test: http://sigma.ug.edu.pl:4444/api/v1/names</title>
-    <!-- ssh na sigmę:
+    <title>Test: http://localhost:3000/no_cors.html (no CORS)</title>
+    <!--
       mongod.sh
-      cd Bitbucket/cors-data-server
-      rails s -p 4444
+      rails s -p 3000
+      localhost:3000/no_cors.html
     -->
     <style>
     html, body {
@@ -31,14 +31,14 @@
       }
     </style>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="/js/serializeForm.js"></script>
+    <script src="/serializeForm.js"></script>
 
     <script>
     $(function() {
 
       console.log('is CORS supported?', $.support.cors);
 
-      var url = 'http://sigma.ug.edu.pl:4444/api/v1/names';
+      var url = 'http://localhost:3000/books';
 
       var template = function(obj) {
         return '<li><span class="first">' + obj.first + '</span> <button value="' +  obj.id + '">Delete</button></li>';
@@ -89,20 +89,20 @@
     <!-- https://github.com/danheberden/jquery-serializeForm -->
 
     <div id="container">
-      <h1>CORS test: Names</h1>
-      <h3>http://sigma.ug.edu.pl:4444/api/v1/names</h3>
+      <h1>Test: Books</h1>
+      <h3>http://localhost:3000/books</h3>
 
-      <form id="new_name" class="new_name" accept-charset="utf-8">
+      <form id="new_book" class="new_book" accept-charset="utf-8">
         <div style="margin:0;padding:0;display:inline">
           <input name="utf8" type="hidden" value="&#x2713;">
         </div>
         <div class="inputs">
-          <input id="name_first" name="name[first]" type="text"><input
-              class="button" name="commit" type="submit" value="Add Name">
+          <input id="book_first" name="book[first]" type="text"><input
+              class="button" name="commit" type="submit" value="Add Book">
         </div>
       </form>
 
-      <ul id='names'></ul>
+      <ul id='books'></ul>
     </div>
 
   </body>
