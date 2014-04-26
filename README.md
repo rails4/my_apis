@@ -170,7 +170,7 @@ Na Sigmie uruchamiamy mongod i aplikację:
 ```sh
 mongod.sh
 git co -b cors
-rails s
+rails s -p 3000
 ```
 
 Lokalnie uruchamiamy serwerw www, np. *serve*:
