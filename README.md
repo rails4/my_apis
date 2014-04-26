@@ -110,14 +110,14 @@ Instalujemy rozszerzenie FireQuery, link do dokumentacji jQuery:
 * [Firefox](http://firequery.binaryage.com/)
 * [$.getJSON](http://api.jquery.com/jquery.getjson/) –
   shorthand for
-    ```js
-    $.ajax({
-      dataType: "json",
-      url: url,
-      data: data,
-      success: success
-    });
-    ```
+```js
+$.ajax({
+  dataType: "json",
+  url: url,
+  data: data,
+  success: success
+});
+```
 
 Zaczynamy (powtórka):
 
