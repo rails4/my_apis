@@ -248,3 +248,9 @@ Response:
     * Closing connection #0
 
 Jak widać po nagłówkach *Origin* CORS działa!
+
+Daltego, teraz po wejściu na stronę
+
+    localhost:3000/cors.html
+
+powinno wszystko działać.
