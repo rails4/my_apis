@@ -118,8 +118,7 @@ $.ajax({
   success: success
 });
 ```
-
-Zaczynamy (powtórka):
+Sprawdzamy czy aplikacja działa jak należy (powtórka):
 
 ```
 http://localhost:3000/books
@@ -128,7 +127,39 @@ http://localhost:3000/books.json
 http://localhost:3000/books.json?search=Anna
 ```
 
-Firebug console: zakładka Net:
+oraz na konsoli przeglądarki (Firebug: zakładka Net):
 ```
 http://localhost:3000/books/4.json
+```
+
+Wpisujemy na konsoli:
+```js
+$.getJSON("http://localhost:3000/books/4.json", function(data) {
+  console.log(JSON.stringify(data));
+  // console.dir(data);
+  // console.table(data);
+});
+```
+
+Formularz wygenerowany prze *form_tag*:
+
+```rhtml
+<form accept-charset="UTF-8" action="/books" method="get">
+  <div style="display:none">
+    <input name="utf8" type="hidden" value="&#x2713;">
+  </div>
+  <div class="inputs">
+    <input id="search" name="search" type="text">
+    <input type="submit" value="Search">
+  </div>
+</form>
+```
+
+Wyszukiwanie:
+
+```json
+$.getJSON("http://localhost:3000/books.json",
+    'utf8=%E2%9C%93&search=Anna', function(data) {
+  console.log(JSON.stringify(data));
+});
 ```

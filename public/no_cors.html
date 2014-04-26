@@ -6,7 +6,7 @@
     <!--
       mongod.sh
       rails s -p 3000
-      localhost:3000/no_cors.html
+      http://localhost:3000/no_cors.html
     -->
     <style>
     html, body {
@@ -17,8 +17,7 @@
     a { color: #0000FF; }
     h1 { font-size: 140%; color: #C03000;}
     ul { list-style: none; padding-left: 0; }
-    .first { width: 280px; display: inline-block; }
-    #name_first { width: 280px; }
+    .no { font-weight: bold; padding-right: .5em; }
 
     #container {
       max-width: 600px;
@@ -30,58 +29,43 @@
       margin-top: 20px;
       }
     </style>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="/serializeForm.js"></script>
 
     <script>
     $(function() {
-
       console.log('is CORS supported?', $.support.cors);
 
       var url = 'http://localhost:3000/books';
+      var search_form = $('#search_form');
+      var search = $('#search');
+      var paragraphs = $('#paragraphs');
 
       var template = function(obj) {
-        return '<li><span class="first">' + obj.first + '</span> <button value="' +  obj.id + '">Delete</button></li>';
+        return '<li><span class="no">#' + obj.id + '</span> ' + obj.para + '</li>';
       };
 
-      // get data and fill ul#names
-      $.getJSON(url, function(data) {
-        // console.log(JSON.stringify(data));
-        var li = [];
-        $.each(data.names, function() {
-          // console.log(this);
-          li.push(template(this));
-        });
-        $('#names').append(li.join('\n'));
-      });
-
-      // add name
-      $('.button').on('click', function(event) {
-        var params = $('#new_name').serializeForm();
+      $('input[type="submit"]').on('click', function(event) {
+        var params = search_form.serializeForm();
         // console.log('params:', params);
 
-        $('#name_first').val(''); // clear up input
-        $.post(url, params, function(data, textStatus) {
-          console.log('post status:', textStatus);
-          $('#names').append(template(data.name));
-        }, 'json');
-      });
+        paragraphs.empty();
+        search.val(''); // clear up input
 
-      // delete name
-      $('ul').on('click', 'button[value]', function(event) {
-        var  id = $(this).attr('value');
-        var $el = $(this).parent(); // li element
-        // console.log('delete:', id);
-        $.ajax({ url: url + '/' + id, type: 'DELETE' })
-          .done(function (data, textStatus) {
-            // console.log('delete status:', textStatus);
-            $el.remove(); // from the DOM
+        $.getJSON(url, params, function(data) {
+          var li = [];
+          $.each(data.books, function() {
+            li.push(template(this));
           });
+          $('#paragraphs').append(li.join('\n'));
+        });
       });
 
-      // prevent the form#new_name from being submitted
-      $('#new_name').on('submit', false);
+      // prevent the #search_form from being submitted
+      $('#search_form').on('submit', false);
 
+      // get data and fill ul#paragraphs
+      $('input[type="submit"]').trigger("click");
     });
     </script>
 
@@ -89,20 +73,19 @@
     <!-- https://github.com/danheberden/jquery-serializeForm -->
 
     <div id="container">
-      <h1>Test: Books</h1>
-      <h3>http://localhost:3000/books</h3>
+      <h1>War and Peace at <i>http://localhost:3000/books</i></h1>
 
-      <form id="new_book" class="new_book" accept-charset="utf-8">
-        <div style="margin:0;padding:0;display:inline">
+      <form id="search_form" accept-charset="UTF-8" action="/books" method="get">
+        <div style="display:none">
           <input name="utf8" type="hidden" value="&#x2713;">
         </div>
         <div class="inputs">
-          <input id="book_first" name="book[first]" type="text"><input
-              class="button" name="commit" type="submit" value="Add Book">
+          <input id="search" name="search" type="text">
+          <input type="submit" value="Search">
         </div>
       </form>
 
-      <ul id='books'></ul>
+      <ul id="paragraphs"></ul>
     </div>
 
   </body>

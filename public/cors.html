@@ -2,71 +2,91 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Лев Толстой, Война и миръ</title>
+    <title>Test: http://localhost:3000/no_cors.html (no CORS)</title>
+    <!--
+      mongod.sh
+      rails s -p 3000
+      http://localhost:3000/no_cors.html
+    -->
     <style>
-      html, body {
-        background-color: #C03000;
-        font-family: Verdana, Helvetica, Arial;
-        font-size: 14px;
-      }
-      a { color: #0000FF; }
+    html, body {
+      background-color: #C03000;
+      font-family: Verdana, Helvetica, Arial;
+      font-size: 14px;
+    }
+    a { color: #0000FF; }
+    h1 { font-size: 140%; color: #C03000;}
+    ul { list-style: none; padding-left: 0; }
+    .no { font-weight: bold; padding-right: .5em; }
 
-      #container {
-        max-width: 600px;
-        width: 100%;
-        margin: 0 auto;
-        background-color: #FFF;
-        padding: 20px 40px;
-        border: solid 1px black;
-        margin-top: 20px;
+    #container {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      background-color: #FFF;
+      padding: 20px 40px;
+      border: solid 1px black;
+      margin-top: 20px;
       }
     </style>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="/serializeForm.js"></script>
 
     <script>
-    // http://www.infinite-scroll.com/infinite-scroll-jquery-plugin/
-
     $(function() {
       console.log('is CORS supported?', $.support.cors);
 
-      function addParagraphs(data, textStatus, jqXHR) {
-        if (data.length == 0) {
-          $(window).unbind('scroll');
-        } else {
-          var items = [];
-          $.each(data, function() {
-            items.push('<li value="' + this.id +1 + '">' + this.para + '</li>');
+      var url = 'http://localhost:3000/books';
+      var search_form = $('#search_form');
+      var search = $('#search');
+      var paragraphs = $('#paragraphs');
+
+      var template = function(obj) {
+        return '<li><span class="no">#' + obj.id + '</span> ' + obj.para + '</li>';
+      };
+
+      $('input[type="submit"]').on('click', function(event) {
+        var params = search_form.serializeForm();
+        // console.log('params:', params);
+
+        paragraphs.empty();
+        search.val(''); // clear up input
+
+        $.getJSON(url, params, function(data) {
+          var li = [];
+          $.each(data.books, function() {
+            li.push(template(this));
           });
-          $('#paragraphs').append(items.join('\n'));
-        }
-      }
-
-      // bind anonymous function to scroll event
-
-      $(window).scroll(function() {
-        if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-          var data = $.data(document.body, 'paragraphs');
-          $.data(document.body, 'paragraphs', { page: data.page + 1, per_page: 250 });
-
-          // $.getJSON('/paragraphs', { page: data.page, per_page: data.per_page }, addParagraphs);
-          $.getJSON('http://sigma.ug.edu.pl:44444/api/v1/paragraphs', { page: data.page, per_page: data.per_page }, addParagraphs);
-          // $.getJSON('http://localhost:3000/paragraphs', { page: data.page, per_page: data.per_page }, addParagraphs);
-        }
+          $('#paragraphs').append(li.join('\n'));
+        });
       });
 
-      // set data attributes and trigger scroll event
+      // prevent the #search_form from being submitted
+      $('#search_form').on('submit', false);
 
-      $.data(document.body, 'paragraphs', { page: 1, per_page: 250 });
-      $(window).scroll();
-
+      // get data and fill ul#paragraphs
+      $('input[type="submit"]').trigger("click");
     });
     </script>
 
   <body>
+    <!-- https://github.com/danheberden/jquery-serializeForm -->
+
     <div id="container">
-      <h1>Leo Tolstoy, War and Peace</h1>
-      <ol id="paragraphs"></ol>
+      <h1>War and Peace at <i>http://localhost:3000/books</i></h1>
+
+      <form id="search_form" accept-charset="UTF-8" action="/books" method="get">
+        <div style="display:none">
+          <input name="utf8" type="hidden" value="&#x2713;">
+        </div>
+        <div class="inputs">
+          <input id="search" name="search" type="text">
+          <input type="submit" value="Search">
+        </div>
+      </form>
+
+      <ul id="paragraphs"></ul>
     </div>
+
   </body>
 </html>
-
