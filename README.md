@@ -217,7 +217,7 @@ A tak sprawdzamy czy to działa:
 curl \
   --verbose \
   --request OPTIONS \
-  http://localhost:3000/api/v1/names.json \
+  http://localhost:3000/books.json \
   --header 'Origin: http://localhost' \
   --header 'Access-Control-Request-Headers: Origin, Accept, Content-Type' \
   --header 'Access-Control-Request-Method: GET'
@@ -226,10 +226,11 @@ curl \
 Response:
 
     * About to connect() to localhost port 3000 (#0)
+    *   Trying ::1... Połączenie odrzucone
     *   Trying 127.0.0.1... connected
     * Connected to localhost (127.0.0.1) port 3000 (#0)
-    > OPTIONS /api/v1/names.json HTTP/1.1
-    > User-Agent: curl/7.21.7
+    > OPTIONS /books.json HTTP/1.1
+    > User-Agent: curl/7.21.7 libcurl/7.21.7 NSS/3.13.5.0 zlib/1.2.5 libidn/1.22 libssh2/1.2.7
     > Host: localhost:3000
     > Accept: */*
     > Origin: http://localhost
@@ -239,16 +240,28 @@ Response:
     < HTTP/1.1 200 OK
     < Content-Type: text/plain
     < Access-Control-Allow-Origin: http://localhost
-    < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+    < Access-Control-Allow-Methods: GET, POST, OPTIONS
     < Access-Control-Max-Age: 1728000
     < Access-Control-Allow-Credentials: true
     < Access-Control-Allow-Headers: Origin, Accept, Content-Type
     < Cache-Control: no-cache
-    < X-Request-Id: a244fbcf16b779202c975555a9e0ca52
-    < X-Runtime: 0.025061
+    < X-Request-Id: dce09c04-5fc2-47d7-b6be-946f8ab2fde5
+    < X-Runtime: 0.001727
     < Connection: close
-    < Server: thin 1.5.0 codename Knife
+    < Server: thin 1.6.2 codename Doc Brown
     <
     * Closing connection #0
 
 Jak widać po nagłówkach *Origin* CORS działa!
+
+A na Sigmie? Też działa:
+
+```sh
+curl \
+  --verbose \
+  --request OPTIONS \
+  http://sigma.ug.edu.pl:3000/books.json \
+  --header 'Origin: http://localhost' \
+  --header 'Access-Control-Request-Headers: Origin, Accept, Content-Type' \
+  --header 'Access-Control-Request-Method: GET'
+```
