@@ -68,6 +68,12 @@ Tweaking code in [BooksController](app/controllers/books_controller.rb).
 
 ## Yes: ActiveModel::Serializers
 
+Przechodzimy na gałąź `ams`:
+
+```sh
+git co ams
+```
+
 Generujemy serializer:
 
 ```
@@ -97,9 +103,21 @@ class BookSerializer < ActiveModel::Serializer
 end
 ```
 
+### Sprawdzamy jak to działa na konsoli przeglądarki
 
-## CORS
+Instalujemy rozszerzenie FireQuery
 
-Without CORS – sharing data with application.
+* [Firefox](http://firequery.binaryage.com/)
 
-With CORS – sharing data with world.
+
+```
+http://localhost:3000/books
+
+http://localhost:3000/books.json
+http://localhost:3000/books.json?search=Anna
+```
+
+Firebug console: zakładka Net:
+```
+http://localhost:3000/books/4.json
+```

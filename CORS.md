@@ -1,3 +1,6 @@
+## CORS – sharing data with World
+
+
 ## TODO: Implementacja API w wersji v1
 
 Format zwracanych danych, którego oczekuje adapter REST frameworka Ember.js
