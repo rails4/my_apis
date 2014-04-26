@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>War and Peace at http://sigma.ug.edu.pl:3000/cors.html (CORS)</title>
     <!--
-      mongod.sh
-      rails s -p 3000
-      http://sigma.ug.edu.pl:3000/no_cors.html
+      cd public/
+      serve
+
+      http://localhost:3000/cors.html
     -->
     <style>
     html, body {
@@ -36,7 +37,7 @@
     $(function() {
       console.log('is CORS supported?', $.support.cors);
 
-      var url = 'http://sigma.ug.edu.pl:3000/books';
+      var url = 'http://sigma.ug.edu.pl:3000/books.json';
       var search_form = $('#search_form');
       var search = $('#search');
       var paragraphs = $('#paragraphs');

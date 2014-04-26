@@ -213,15 +213,13 @@ end
 ```
 A tak sprawdzamy czy to działa:
 
-```sh
-curl \
-  --verbose \
-  --request OPTIONS \
-  http://localhost:3000/books.json \
-  --header 'Origin: http://localhost' \
-  --header 'Access-Control-Request-Headers: Origin, Accept, Content-Type' \
-  --header 'Access-Control-Request-Method: GET'
-```
+    curl \
+      --verbose \
+      --request OPTIONS \
+      http://localhost:3000/books.json \
+      --header 'Origin: http://localhost' \
+      --header 'Access-Control-Request-Headers: Origin, Accept, Content-Type' \
+      --header 'Access-Control-Request-Method: GET'
 
 Response:
 
@@ -253,15 +251,3 @@ Response:
     * Closing connection #0
 
 Jak widać po nagłówkach *Origin* CORS działa!
-
-A na Sigmie? Też działa:
-
-```sh
-curl \
-  --verbose \
-  --request OPTIONS \
-  http://sigma.ug.edu.pl:3000/books.json \
-  --header 'Origin: http://localhost' \
-  --header 'Access-Control-Request-Headers: Origin, Accept, Content-Type' \
-  --header 'Access-Control-Request-Method: GET'
-```
