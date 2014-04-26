@@ -157,7 +157,7 @@ Formularz wygenerowany prze *form_tag*:
 
 Wyszukiwanie:
 
-```json
+```js
 $.getJSON("http://localhost:3000/books.json",
     'utf8=%E2%9C%93&search=Anna', function(data) {
   console.log(JSON.stringify(data));
