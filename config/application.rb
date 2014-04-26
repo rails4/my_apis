@@ -26,5 +26,15 @@ module MyApis
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    config.middleware.use Rack::Cors do
+      allow do
+        # regular expressions can be used here
+        # origins 'localhost:3000', /http:\/\/192\.168\.0\.\d{1,3}(:\d+)?/
+        origins '*'
+        # resource %r{/names/\d+.json},
+        # resource '*', :headers => :any, :methods => [:get, :options]
+        resource '*', headers: :any, methods: [:get, :options]
+      end
+    end
   end
 end
