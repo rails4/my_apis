@@ -173,8 +173,9 @@ git co -b cors
 rails s -p 3000
 ```
 
-Lokalnie uruchamiamy serwerw www, np. *serve*:
+Lokalnie uruchamiamy serwer WWW, na przykład Node.js *serve*:
 ```sh
+cd public/
 serve
 ```
 
