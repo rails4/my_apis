@@ -163,3 +163,28 @@ $.getJSON("http://localhost:3000/books.json",
   console.log(JSON.stringify(data));
 });
 ```
+
+## CORS
+
+Na Sigmie uruchamiamy mongod i aplikację:
+```sh
+mongod.sh
+git co -b cors
+rails s
+```
+
+Lokalnie uruchamiamy serwerw www, np. *serve*:
+```sh
+serve
+```
+
+Po wejściu na stronę *localhost:3000/cors.html* na konsoli
+przeglądarki dostajemy następujący komunikat:
+```
+is CORS supported? true
+GET http://sigma.ug.edu.pl:3000/books?utf8=%E2%9C%93&search=
+Cross-Origin Request Blocked:
+  The Same Origin Policy disallows reading the remote resource at
+  http://sigma.ug.edu.pl:3000/books?utf8=%E2%9C%93&search=.
+  This can be fixed by moving the resource to the same domain or enabling CORS.
+```
