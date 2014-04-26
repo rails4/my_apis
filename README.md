@@ -1,20 +1,21 @@
-## REST API
+## RESTful JSON API in Rails 4 + MongoDB
 
-The simple ways to think of an API is:
-
-1. share DATA with my application
-1. share DATA with world
+The simple ways to think of an API is **share application DATA with world**.
 
 Zaczynamy:
 
 * [Aplikacja Rails 4](Rails4+Mongoid_App.md)
 
-TODO:
+Dokumentacja:
 
-* [rails-api](https://github.com/rails-api/rails-api)
-* [rack-cors](https://github.com/cyu/rack-cors)
+* [active_model_serializers](https://github.com/rails-api/rails-api) –
+  ActiveModel::Serializer implementation and Rails hooks
+* [rack-cors](https://github.com/cyu/rack-cors) –
+  Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible
 * [HTTP authentications](http://guides.rubyonrails.org/action_controller_overview.html#http-authentications)
 * [force HTTPS protocol](http://guides.rubyonrails.org/action_controller_overview.html#force-https-protocol)
+* [rails-api](https://github.com/rails-api/rails-api) –
+  Rails for API only applications
 
 
 ## JSONs sharing
@@ -84,14 +85,14 @@ end
 
 Dlaczego takie rozwiązanie jest lepsze?
 
-TODO: Podmieniamy `:c` na `:para`; usuwamy `:t`?
+Zamieniamy atrybut `:c` na `:para` oraz usuwamy atrybut `:t`:
 
 ```ruby
 class BookSerializer < ActiveModel::Serializer
   attributes :id, :para
 
   def para
-    c
+    object.c
   end
 end
 ```
