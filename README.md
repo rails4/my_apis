@@ -105,10 +105,21 @@ end
 
 ### Sprawdzamy jak to działa na konsoli przeglądarki
 
-Instalujemy rozszerzenie FireQuery
+Instalujemy rozszerzenie FireQuery, link do dokumentacji jQuery:
 
 * [Firefox](http://firequery.binaryage.com/)
+* [$.getJSON](http://api.jquery.com/jquery.getjson/) –
+  shorthand for
+    ```js
+    $.ajax({
+      dataType: "json",
+      url: url,
+      data: data,
+      success: success
+    });
+    ```
 
+Zaczynamy (powtórka):
 
 ```
 http://localhost:3000/books
