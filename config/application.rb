@@ -30,7 +30,7 @@ module MyApis
     config.middleware.use Rack::Cors do
       allow do
         origins '*'
-        resource '*', :headers => :any, :methods => [:get, :options]
+        resource '*', headers: :any, methods: [:get, :options]
       end
     end
     # config.middleware.use Rack::Cors do
