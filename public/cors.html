@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Test: http://localhost:3000/no_cors.html (no CORS)</title>
+    <title>War and Peace at http://sigma.ug.edu.pl:3000/cors.html (CORS)</title>
     <!--
       mongod.sh
       rails s -p 3000
-      http://localhost:3000/no_cors.html
+      http://sigma.ug.edu.pl:3000/no_cors.html
     -->
     <style>
     html, body {
@@ -36,7 +36,7 @@
     $(function() {
       console.log('is CORS supported?', $.support.cors);
 
-      var url = 'http://localhost:3000/books';
+      var url = 'http://sigma.ug.edu.pl:3000/books';
       var search_form = $('#search_form');
       var search = $('#search');
       var paragraphs = $('#paragraphs');
@@ -73,7 +73,7 @@
     <!-- https://github.com/danheberden/jquery-serializeForm -->
 
     <div id="container">
-      <h1>War and Peace at <i>http://localhost:3000/books</i></h1>
+      <h1>War and Peace at <i>http://sigma.ug.edu.pl:3000/books</i></h1>
 
       <form id="search_form" accept-charset="UTF-8" action="/books" method="get">
         <div style="display:none">
