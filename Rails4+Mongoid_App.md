@@ -58,7 +58,7 @@ Pominiemy `_id` i użyjemy numeru akapitu `p` jako nowego `_id`:
 Konwersję wykonamy za pomocą programu [jq](http://stedolan.github.io/jq/):
 
 ```sh
-< war_and_peace.json jq -c '. | {_id: .p, c, t}' | \
+< db/war_and_peace.json jq -c '. | {_id: .p, c, t}' | \
   mongoimport -d my_apis_development -c books
 ```
 Na koniec uaktualniamy plik konfiguracyjny [mongoid.yml](config/mongoid.yml).
