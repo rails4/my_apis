@@ -2,17 +2,17 @@
 
 The simple ways to think of an API is **share application DATA with world**.
 
-
 ```
-                        START     <---- Rails 4 + MongoDB application,
-                          |             or Sinatra, Express,
-                          |             or other web application
+                        START     <---- aplikacja Rails 4 + MongoDB,
+                          |             lub aplikacja Sinatra lub – Express,
+                          |             albo jakaś inna plikacja www
                    No     |
         /-----------------•
         |                 | Yes
         v                 |
        HTML             JSON            /books,   /books.json
-                          |             /books/4, /books/4.json
+ zwykła aplikacja www     |             /books/4, /books/4.json
+                          |
                    No     |
         /-----------------•             dodajemy metadane – root element
         |                 | Yes
