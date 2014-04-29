@@ -14,6 +14,7 @@ Dokumentacja:
   Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible
 * [HTTP authentications](http://guides.rubyonrails.org/action_controller_overview.html#http-authentications)
 * [force HTTPS protocol](http://guides.rubyonrails.org/action_controller_overview.html#force-https-protocol)
+* [Rails with SSL in Development The Simple Way](http://www.napcsweb.com/blog/2013/07/21/rails_ssl_simple_wa/)
 * [rails-api](https://github.com/rails-api/rails-api) –
   Rails for API only applications
 
