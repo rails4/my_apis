@@ -15,7 +15,7 @@ The simple ways to think of an API is **share application DATA with world**.
                           |             /books/4, /books/4.json
                 No        |
         /-----------------•             dodajemy metadane – root element
-        |                 |
+        |    (branch)     |
         v                 |
   modyfikujemy:           | Yes
     render json: ...      |
