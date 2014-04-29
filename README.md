@@ -180,7 +180,7 @@ $.getJSON("http://localhost:3000/books/4.json", function(data) {
 });
 ```
 
-Formularz wygenerowany prze *form_tag*:
+Formularz wygenerowany przez *form_tag*:
 
 ```rhtml
 <form accept-charset="UTF-8" action="/books" method="get">
