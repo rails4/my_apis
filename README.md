@@ -2,6 +2,45 @@
 
 The simple ways to think of an API is **share application DATA with world**.
 
+
+```
+                        START     <---- Rails 4 + MongoDB application,
+                          |             or Sinatra, Express,
+                          |             or other web application
+                No        |
+        /-----------------•
+        |                 | Yes
+        v                 |
+       HTML             JSON            /books,   /books.json
+                          |             /books/4, /books/4.json
+                No        |
+        /-----------------•             dodajemy metadane – root element
+        |                 |
+        v                 |
+  modyfikujemy:           | Yes
+    render json: ...      |
+                          |
+                          •
+                       /-----\
+                       | API |          np. ActiveModel::Serializers
+                       \-----/
+                          ^    \
+                          |     \
+                 No       |      \
+        /-------------- CORS      \
+        |                 |        \  Authenticate requests
+        v                 | Yes     \
+     DATA lokalne         |          \
+     dla aplikacji:       |           \       No
+       no_cors.html   share DATA       \----------- http request
+                      with World:       \     No
+                        cors.html        \--------- http digest
+                                          \   Yes
+                                           \------- tokens
+                                                      model User
+                                                      with attrs: email and token
+```
+
 Zaczynamy:
 
 * [Aplikacja Rails 4](Rails4+Mongoid_App.md)
