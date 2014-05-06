@@ -113,7 +113,7 @@ curl -s localhost:3000/api/books.json | jq .
 > vulnerable to man-in-the-middle attacks, it is hard to use strong
 > hashes such as *bcrypt*, and a few other details.<br>
 > So, in the real world, people don't actually use Digest auth very often.<br>
-> R. Bigg, Y. Katz, S. Klabnik. *Rails 4 in Action*
+>     R. Bigg, Y. Katz, S. Klabnik. *Rails 4 in Action*
 
 ### Token–based Authentication
 
