@@ -2,6 +2,44 @@
 
 The simple ways to think of an API is **share application DATA with world**.
 
+```
+                        START     <---- aplikacja Rails 4 + MongoDB,
+                          |             lub aplikacja Sinatra lub – Express,
+                          |             albo jakaś inna plikacja www
+                   No     |
+        /-----------------•
+        |                 | Yes
+        v                 |
+       HTML             JSON            /books,   /books.json
+ zwykła aplikacja www     |             /books/4, /books/4.json
+                          |
+                   No     |
+        /-----------------•             dodajemy metadane – root element
+        |                 | Yes
+        v                 |
+  modyfikujemy:           |
+    render json: ...      |
+                          |
+                       /-----\
+                       | API |          np. ActiveModel::Serializers
+                       \-----/
+                          ^    \
+                          |     \
+                   No     |      \
+        /-------------- CORS      \
+        |                 |        \  Authenticate requests
+        v                 | Yes     \
+     DATA lokalne         |          \
+     dla aplikacji:       |           \       No
+       no_cors.html   share DATA       \----------- http request
+                      with World:       \     No
+                        cors.html        \--------- http digest
+                                          \   Yes
+                                           \------- tokens
+                                                      model User
+                                                      with attrs: email and token
+```
+
 Zaczynamy:
 
 * [Aplikacja Rails 4](Rails4+Mongoid_App.md)
@@ -14,6 +52,7 @@ Dokumentacja:
   Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible
 * [HTTP authentications](http://guides.rubyonrails.org/action_controller_overview.html#http-authentications)
 * [force HTTPS protocol](http://guides.rubyonrails.org/action_controller_overview.html#force-https-protocol)
+* [Rails with SSL in Development The Simple Way](http://www.napcsweb.com/blog/2013/07/21/rails_ssl_simple_wa/)
 * [rails-api](https://github.com/rails-api/rails-api) –
   Rails for API only applications
 
