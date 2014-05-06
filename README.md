@@ -44,7 +44,9 @@
 
 Dokumentacja:
 
-* [rails-api](https://github.com/rails-api/rails-api) – Rails for API only applications
+* [Cryptographic nonce](http://en.wikipedia.org/wiki/Cryptographic_nonce)
+* gem [rails-api](https://github.com/rails-api/rails-api) – Rails for API only applications
+
 
 ### HTTP Basic Auth
 
