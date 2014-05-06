@@ -1,8 +1,21 @@
 Rails.application.routes.draw do
 
-  #get 'books/show'
+  # get 'books/index'
+  # get 'books/show'
 
   resources :books, only: [:index, :show]
+
+  # namespace :api do
+  #   get 'books/index'
+  # end
+
+  # namespace :api do
+  #   get 'books/show'
+  # end
+
+  namespace :api do
+    resources :books, only: [:index, :show]
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

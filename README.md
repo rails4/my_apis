@@ -1,6 +1,4 @@
-## RESTful JSON API in Rails 4 + MongoDB
-
-The simple ways to think of an API is **share application DATA with world**.
+## RESTful JSON API
 
 ```
                         START     <---- aplikacja Rails 4 + MongoDB,
@@ -40,21 +38,90 @@ The simple ways to think of an API is **share application DATA with world**.
                                                       with attrs: email and token
 ```
 
-Zaczynamy:
-
-* [Aplikacja Rails 4](Rails4+Mongoid_App.md)
-
 Dokumentacja:
 
 * [active_model_serializers](https://github.com/rails-api/rails-api) –
   ActiveModel::Serializer implementation and Rails hooks
-* [rack-cors](https://github.com/cyu/rack-cors) –
-  Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible
 * [HTTP authentications](http://guides.rubyonrails.org/action_controller_overview.html#http-authentications)
 * [force HTTPS protocol](http://guides.rubyonrails.org/action_controller_overview.html#force-https-protocol)
 * [Rails with SSL in Development The Simple Way](http://www.napcsweb.com/blog/2013/07/21/rails_ssl_simple_wa/)
 * [rails-api](https://github.com/rails-api/rails-api) –
   Rails for API only applications
+
+
+## Sharing JSONs only!
+
+Dodajemy *namespace*:
+
+```ruby
+Rails.application.routes.draw do
+  namespace :api do
+    resources :books, only: [:index, :show]
+  end
+```
+
+```sh
+rails g controller Api::Books index show -p
+    create  app/controllers/api/books_controller.rb
+    invoke  rspec
+    create    spec/controllers/api/books_controller_spec.rb
+```
+
+Poprawiamy routing:
+
+```ruby
+Rails.application.routes.draw do
+  # get 'books/index'
+  # get 'books/show'
+  resources :books, only: [:index, :show]
+
+  # namespace :api do
+  #   get 'books/index'
+  # end
+  # namespace :api do
+  #   get 'books/show'
+  # end
+  namespace :api do
+    resources :books, only: [:index, :show]
+  end
+```
+
+Kontroler *app/controllers/api/books_controller.rb*:
+
+```ruby
+class Api::BooksController < ApiController
+  def index
+    query = params[:search]
+    @books = Book.search(query).limit(4)
+
+    render json: @books
+  end
+
+  def show
+    @book = Book.find params[:id].to_i
+
+    render json: @book
+  end
+end
+```
+
+oraz dodajemy użyty powyżej *app/controllers/api_controller.rb*:
+
+```ruby
+class ApiController < ActionController::Base
+end
+```
+
+Sprawdzamy jak to działa na konsoli:
+
+```sh
+curl -s localhost:3000/api/books/0.json
+curl -s localhost:3000/api/books.json | jq .
+```
+
+
+
+
 
 
 ## JSONs sharing
