@@ -1,253 +1,163 @@
-## RESTful JSON API in Rails 4 + MongoDB
+## API Authentication and Authorization
 
-The simple ways to think of an API is **share application DATA with world**.
+* *authentication* – identyfikacja, weryfikacja tożsamości
+* *authorization* – autoryzacja; uprawnienie; upoważnienie
 
-Zaczynamy:
 
-* [Aplikacja Rails 4](Rails4+Mongoid_App.md)
+```
+                        START     <---- aplikacja Rails 4 + MongoDB,
+                          |             lub aplikacja Sinatra lub – Express,
+                          |             albo jakaś inna plikacja www
+                   No     |
+        /-----------------•
+        |                 | Yes
+        v                 |
+       HTML             JSON            /books,   /books.json
+ zwykła aplikacja www     |             /books/4, /books/4.json
+                          |
+                   No     |
+        /-----------------•             dodajemy metadane – root element
+        |                 | Yes
+        v                 |
+  modyfikujemy:           |
+    render json: ...      |
+                          |
+                       /-----\
+                       | API |          np. ActiveModel::Serializers
+                       \-----/
+                          ^    \
+                          |     \
+                   No     |      \
+        /-------------- CORS      \
+        |                 |        \  Authenticate requests
+        v                 | Yes     \
+     DATA lokalne         |          \
+     dla aplikacji:       |           \       No
+       no_cors.html   share DATA       \----------- http request
+                      with World:       \     No
+                        cors.html        \--------- http digest
+                                          \   Yes
+                                           \------- tokens
+                                                      model User
+                                                      with attrs: email and token
+```
 
 Dokumentacja:
 
-* [active_model_serializers](https://github.com/rails-api/rails-api) –
-  ActiveModel::Serializer implementation and Rails hooks
-* [rack-cors](https://github.com/cyu/rack-cors) –
-  Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible
-* [HTTP authentications](http://guides.rubyonrails.org/action_controller_overview.html#http-authentications)
-* [force HTTPS protocol](http://guides.rubyonrails.org/action_controller_overview.html#force-https-protocol)
-* [rails-api](https://github.com/rails-api/rails-api) –
-  Rails for API only applications
+* [rails-api](https://github.com/rails-api/rails-api) – Rails for API only applications
 
+### HTTP Basic Auth
 
-## JSONs sharing
+As the name may imply, this is a very basic way of doing
+authentication.  Here's how it works: You make a string,
+`username:password`, then *Base64* encode it, and then send it in an
+Authorization header.
 
-Poniżej skorzystamy z danych zapisanych w kolekcji
-*books* w bazie *my_apis_development*:
+### HTTP Digest Authentication
 
-```ruby
-class BooksController < ApplicationController
-  def index
-    ...
-    respond_to do |format|
-      format.html
-      format.json { render json: @books }
-    end
-  end
-  def show
-   ...
-   respond_to do |format|
-      format.html
-      format.json { render json: @book }
-    end
-  end
-end
-```
-
-Request:
-```
-curl -s localhost:3000/books/8.json
-```
-Response:
-```
-{
-  "_id":0,
-  "c":"An Anonymous Volunteer, and David Widger",
-  "t":"war and peace"
-}
-```
-
-## No: Tweaking json response
-
-Przechodzimy na gałąź `add_metadata_to_json`:
+Na razie aplikacja nie jest zabezpieczona w żaden sposób.
+Dlatego wykonanie na konsoli:
 
 ```sh
-git co add_metadata_to_json
+curl -i localhost:3000/books/0.json
 ```
-
-Tweaking code in [BooksController](app/controllers/books_controller.rb).
-
-
-## Yes: ActiveModel::Serializers
-
-Przechodzimy na gałąź `ams`:
-
-```sh
-git co ams
-```
-
-Generujemy serializer:
+zwraca:
 
 ```
-rails g serializer book
+HTTP/1.1 200 OK
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+ETag: "2cd9a09c7af0cdd5a6ba092f63af084b"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 9feffcfe-65a3-4c88-a32b-41f76435f634
+X-Runtime: 0.003844
+Connection: close
+Server: thin 1.6.2 codename Doc Brown
+
+{"book":{"id":0,"para":"An Anonymous Volunteer, and David Widger"}}
 ```
 
-Dopisujemy do wygenerowanego pliku *app/serializers/book_serializer.rb*
-pozostałe atrybuty:
+Autentykację dodajemy dopisując w pliku
+*app/controllers/application_controller.rb* następujący kod:
 
 ```ruby
-class BookSerializer < ActiveModel::Serializer
-  attributes :id, :c, :t
-end
-```
+class ApplicationController < ActionController::Base
+  protect_from_forgery with: :exception
 
-Dlaczego takie rozwiązanie jest lepsze?
-
-Zamieniamy atrybut `:c` na `:para` oraz usuwamy atrybut `:t`:
-
-```ruby
-class BookSerializer < ActiveModel::Serializer
-  attributes :id, :para
-
-  def para
-    object.c
-  end
-end
-```
-
-### Sprawdzamy jak to działa na konsoli przeglądarki
-
-Instalujemy rozszerzenie FireQuery, link do dokumentacji jQuery:
-
-* [Firefox](http://firequery.binaryage.com/)
-* [$.getJSON](http://api.jquery.com/jquery.getjson/) –
-  shorthand for
-```js
-$.ajax({
-  dataType: "json",
-  url: url,
-  data: data,
-  success: success
-});
-```
-Sprawdzamy czy aplikacja działa jak należy (powtórka):
-
-```
-http://localhost:3000/books
-
-http://localhost:3000/books.json
-http://localhost:3000/books.json?search=Anna
-```
-
-oraz na konsoli przeglądarki (Firebug: zakładka Net):
-```
-http://localhost:3000/books/4.json
-```
-
-Wpisujemy na konsoli:
-```js
-$.getJSON("http://localhost:3000/books/4.json", function(data) {
-  console.log(JSON.stringify(data));
-  // console.dir(data);
-  // console.table(data);
-});
-```
-
-Formularz wygenerowany prze *form_tag*:
-
-```rhtml
-<form accept-charset="UTF-8" action="/books" method="get">
-  <div style="display:none">
-    <input name="utf8" type="hidden" value="&#x2713;">
-  </div>
-  <div class="inputs">
-    <input id="search" name="search" type="text">
-    <input type="submit" value="Search">
-  </div>
-</form>
-```
-
-Wyszukiwanie:
-
-```js
-$.getJSON("http://localhost:3000/books.json",
-    'utf8=%E2%9C%93&search=Anna', function(data) {
-  console.log(JSON.stringify(data));
-});
-```
-
-## CORS
-
-Na Sigmie uruchamiamy mongod i aplikację:
-```sh
-mongod.sh
-git co -b cors
-rails s
-```
-
-Lokalnie uruchamiamy serwerw www, np. *serve*:
-```sh
-serve
-```
-
-Po wejściu na stronę *localhost:3000/cors.html* na konsoli
-przeglądarki dostajemy następujący komunikat:
-```
-is CORS supported? true
-GET http://sigma.ug.edu.pl:3000/books?utf8=%E2%9C%93&search=
-Cross-Origin Request Blocked:
-  The Same Origin Policy disallows reading the remote resource at
-  http://sigma.ug.edu.pl:3000/books?utf8=%E2%9C%93&search=.
-  This can be fixed by moving the resource to the same domain or enabling CORS.
-```
-
-Do odblokowania żądań *Cross-Origin* użyjemy gemu *rack-cors*.
-Tak jak to opisano
-w [README](https://github.com/cyu/rack-cors#configuration)
-dopisujemy do *config/application.rb*:
-
-```ruby
-module CorsDataServer
-  class Application < Rails::Application
-    ...
-    config.middleware.use Rack::Cors do
-      allow do
-        # regular expressions can be used here
-        # origins 'localhost:3000', /http:\/\/192\.168\.0\.\d{1,3}(:\d+)?/
-        origins '*'
-        # resource %r{/names/\d+.json},
-        # resource '*', :headers => :any, :methods => [:get, :options]
-        resource '*', headers: :any, methods: [:get, :options]
+  helper_method def require_signin
+    authenticate_or_request_with_http_digest do |username|
+      if username == "admin"
+        "sekret" # password
       end
     end
   end
+
+  before_action :require_signin
 end
 ```
-A tak sprawdzamy czy to działa:
 
-    curl \
-      --verbose \
-      --request OPTIONS \
-      http://localhost:3000/books.json \
-      --header 'Origin: http://localhost' \
-      --header 'Access-Control-Request-Headers: Origin, Accept, Content-Type' \
-      --header 'Access-Control-Request-Method: GET'
+Teraz wykonanie na konsoli:
 
-Response:
+```sh
+curl -i localhost:3000/books/0.json
+```
 
-    * About to connect() to localhost port 3000 (#0)
-    *   Trying ::1... Połączenie odrzucone
-    *   Trying 127.0.0.1... connected
-    * Connected to localhost (127.0.0.1) port 3000 (#0)
-    > OPTIONS /books.json HTTP/1.1
-    > User-Agent: curl/7.21.7 libcurl/7.21.7 NSS/3.13.5.0 zlib/1.2.5 libidn/1.22 libssh2/1.2.7
-    > Host: localhost:3000
-    > Accept: */*
-    > Origin: http://localhost
-    > Access-Control-Request-Headers: Origin, Accept, Content-Type
-    > Access-Control-Request-Method: GET
-    >
-    < HTTP/1.1 200 OK
-    < Content-Type: text/plain
-    < Access-Control-Allow-Origin: http://localhost
-    < Access-Control-Allow-Methods: GET, POST, OPTIONS
-    < Access-Control-Max-Age: 1728000
-    < Access-Control-Allow-Credentials: true
-    < Access-Control-Allow-Headers: Origin, Accept, Content-Type
-    < Cache-Control: no-cache
-    < X-Request-Id: dce09c04-5fc2-47d7-b6be-946f8ab2fde5
-    < X-Runtime: 0.001727
-    < Connection: close
-    < Server: thin 1.6.2 codename Doc Brown
-    <
-    * Closing connection #0
+zwraca:
 
-Jak widać po nagłówkach *Origin* CORS działa!
+```
+HTTP/1.1 401 Unauthorized
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+WWW-Authenticate: Digest realm="Application", qop="auth", algorithm=MD5, nonce="MTM5OTM3MDg3NjoxOGNkNGFhODIxNzlkNWFjOTliOWQyNGRiYmM3ODA5Yg==", opaque="bd74854f3a6f8ff8faa86bbde6b64663"
+Content-Type: text/html; charset=utf-8
+Cache-Control: no-cache
+X-Request-Id: 73ea9d56-85b7-4224-a148-f56e00dac2f0
+X-Runtime: 0.016787
+Connection: close
+Server: thin 1.6.2 codename Doc Brown
+
+HTTP Digest: Access denied.
+```
+
+Autentykujemy się tak:
+
+```sh
+curl -i localhost:3000/books/0.json --digest -u admin:sekret
+```
+
+Wykonanie tego polecenia zwraca:
+
+```
+HTTP/1.1 401 Unauthorized
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+WWW-Authenticate: Digest realm="Application", qop="auth", algorithm=MD5, \
+  nonce="MTM5OTM3MTY4MDoxZWVkNTMzNmViNWUzNTkzMGE5ZWQ1ZmQ2Zjc1ZmEyNQ==", \
+  opaque="bd74854f3a6f8ff8faa86bbde6b64663"
+Content-Type: text/html; charset=utf-8
+Cache-Control: no-cache
+X-Request-Id: 7076190e-ccb1-40c9-8452-cd49f83ecfdf
+X-Runtime: 0.002038
+Connection: close
+Server: thin 1.6.2 codename Doc Brown
+
+HTTP/1.1 200 OK
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+ETag: "2cd9a09c7af0cdd5a6ba092f63af084b"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: e9e35997-e556-4f67-bbb6-2f88e1ba7cea
+X-Runtime: 0.023140
+Connection: close
+Server: thin 1.6.2 codename Doc Brown
+
+{"book":{"id":0,"para":"An Anonymous Volunteer, and David Widger"}}
+```
+
+**Well, this breaks the ability to log in via the web interface!**
