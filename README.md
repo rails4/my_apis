@@ -115,7 +115,10 @@ curl -s localhost:3000/api/books.json | jq .
 > So, in the real world, people don't actually use Digest auth very often.<br>
 >     R. Bigg, Y. Katz, S. Klabnik. *Rails 4 in Action*
 
-### Token–based Authentication
+### HTTP Token authentication
+
+* [action_controller/metal/http_authentication.rb](https://github.com/rails/rails/blob/4-1-stable/actionpack/lib/action_controller/metal/http_authentication.rb) –
+  see Simple Token Example
 
 Generate some sort of token for a user and then require
 the client sends token in an HTTP header, like this:
@@ -134,3 +137,80 @@ Pro:
 Cons:
 
 * must configure (and use) SSL
+
+
+Zaczynamy od wygenerowania modelu *User*:
+
+```sh
+rails g model User username token
+  invoke  mongoid
+  create    app/models/user.rb
+  invoke    rspec
+  create      spec/models/user_spec.rb
+```
+
+W pliku *app/models/user.rb* dopisujemy:
+
+```ruby
+class User
+  ...
+
+  before_create :generate_token
+
+  private
+  def generate_token
+    self.token = SecureRandom.uuid
+  end
+end
+```
+Następnie na konsoli Rails wykonujemy:
+
+```ruby
+User.create username: "admin"
+=> #<User _id: 5368eb7c6c6f63033d000000, username: "admin", token: "128de11a-aa47-4a39-8497-b9fd2e556fed">
+```
+
+Sprawdzamy, czy przesłano token w kontrolerze *app/controllers/api_controller.rb*:
+
+```ruby
+class ApiController < ActionController::Base
+  before_action :authenticate #, except: [ :index ]
+
+  private
+  def authenticate
+    authenticate_or_request_with_http_token do |token, options|
+      User.where(token: token)
+    end
+  end
+end
+```
+
+Sprawdzamy, czy to zabezpieczenie działa:
+
+```sh
+curl localhost:3000/api/books.json
+  HTTP Token: Access denied.
+```
+
+Działa!
+
+Teraz wykonujemy żądanie w którym prześlemy token:
+
+```sh
+curl localhost:3000/api/books/0.json \
+    -H 'Authorization: Token token="128de11a-aa47-4a39-8497-b9fd2e556fed"'
+  {"book":{"id":0,"para":"An Anonymous Volunteer, and David Widger"}}
+```
+
+Też działa!
+
+
+*Uwaga:* Jeśli w kolekcji *User* jest wielu użytkowników, to dodajemy
+im wszystkim tokeny na konsoli Rails w taki sposób:
+
+```ruby
+User.all.collect do |user|
+  u.send(:generate_token)  # call private method
+  u.save
+end
+```
