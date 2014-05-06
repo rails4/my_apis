@@ -205,7 +205,26 @@ curl localhost:3000/api/books/0.json \
 Też działa!
 
 
-*Uwaga:* Jeśli w kolekcji *User* jest wielu użytkowników, to dodajemy
+### Konsola przeglądarki + jQuery
+
+Instalujemy rozszerzenie [FireQuery](https://addons.mozilla.org/pl/firefox/addon/firequery/)
+do przeglądarki Firefox – *enables you to inject jQuery into any page*.
+
+```js
+$.ajaxSetup({
+  headers: {
+    'Authorization': 'Token token="128de11a-aa47-4a39-8497-b9fd2e556fed"'
+  }
+});
+$.getJSON('http://localhost:3000/api/books.json', function(data) {
+  console.table(data);
+});
+```
+
+
+### Misc stuff
+
+1\. Jeśli w kolekcji *User* jest wielu użytkowników, to dodajemy
 im wszystkim tokeny na konsoli Rails w taki sposób:
 
 ```ruby
