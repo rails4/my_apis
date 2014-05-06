@@ -167,7 +167,11 @@ Następnie na konsoli Rails wykonujemy:
 
 ```ruby
 User.create username: "admin"
-=> #<User _id: 5368eb7c6c6f63033d000000, username: "admin", token: "128de11a-aa47-4a39-8497-b9fd2e556fed">
+#<#User
+#  _id: 5368eb7c6c6f63033d000000,
+#  username: "admin",
+#  token: "128de11a-aa47-4a39-8497-b9fd2e556fed"
+#>
 ```
 
 Sprawdzamy, czy przesłano token w kontrolerze *app/controllers/api_controller.rb*:
