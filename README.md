@@ -53,13 +53,6 @@ Dokumentacja:
 
 Dodajemy *namespace*:
 
-```ruby
-Rails.application.routes.draw do
-  namespace :api do
-    resources :books, only: [:index, :show]
-  end
-```
-
 ```sh
 rails g controller Api::Books index show -p
   create  app/controllers/api/books_controller.rb
@@ -67,18 +60,19 @@ rails g controller Api::Books index show -p
     create    spec/controllers/api/books_controller_spec.rb
 ```
 
-Poprawiamy routing:
+i zmieniamy wygenerowany routing na:
 
 ```ruby
 Rails.application.routes.draw do
-  resources :books, only: [:index, :show]
+  resources :books, only: [:index, :show]   # zostawiamy bez zmian (na razie?)
 
   namespace :api do
     resources :books, only: [:index, :show]
   end
 ```
 
-Kontroler *app/controllers/api/books_controller.rb*:
+W *app/controllers/api/books_controller.rb* definiujemy metody
+*index* i *show*:
 
 ```ruby
 class Api::BooksController < ApiController
