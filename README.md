@@ -49,7 +49,7 @@ Dokumentacja:
   Rails for API only applications
 
 
-## Sharing JSONs only!
+### Sharing JSONs only!
 
 Dodajemy *namespace*:
 
@@ -105,3 +105,32 @@ Sprawdzamy jak i czy to działa na konsoli:
 curl -s localhost:3000/api/books/0.json
 curl -s localhost:3000/api/books.json | jq .
 ```
+
+
+## Dodajemy Authorization (czy Authentication?)
+
+> Digest auth, while being pretty okay in transit, has some flaws: it’s
+> vulnerable to man-in-the-middle attacks, it is hard to use strong
+> hashes such as *bcrypt*, and a few other details.<br>
+> So, in the real world, people don't actually use Digest auth very often.<br>
+> R. Bigg, Y. Katz, S. Klabnik. *Rails 4 in Action*
+
+### Token–based Authentication
+
+Generate some sort of token for a user and then require
+the client sends token in an HTTP header, like this:
+
+```
+Authorization: Token token="abcdef"
+```
+
+Then check this token against the tokens stored in app database.
+
+Pro:
+
+* it is possible to turn off someone’s API access by revoking their token
+* generated tokens could be long and secure: passwords are sometimes weak
+
+Cons:
+
+* must configure (and use) SSL
